@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
+  <style>
+    :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
+            --warn:#D9730D; --warnSoft:#FBEBDD; --ok:#2F7D4F; --rout:#FBEBC8; --work:#CFE8E2; --home:#E8E1F5; --mtg:#D3E5F7; --open:#EFEEEC; --now:#E03E3E; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#191919; --card:#252525; --line:#333333; --txt:#EDEDED; --mut:#9B9B9B; --hero:#4FD1B5; --heroSoft:#1F3D36;
+              --warn:#FF9F5A; --warnSoft:#4D3017; --ok:#4FD1B5; --rout:#4D3B17; --work:#1F4D44; --home:#3A2F5A; --mtg:#1D3A5C; --open:#2A2A2A; --now:#FF5C5C; }
+    }
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .bg{fill:var(--bg)} .card{fill:var(--card);stroke:var(--line)} .txt{fill:var(--txt)} .mut{fill:var(--mut)} .line{stroke:var(--line)}
+    .hero{fill:var(--hero)} .heroSoft{fill:var(--heroSoft)} .ok{fill:var(--ok)} .warn{fill:var(--warn)} .warnSoft{fill:var(--warnSoft)}
+    .rout{fill:var(--rout)} .work{fill:var(--work)} .home{fill:var(--home)} .mtg{fill:var(--mtg)} .open{fill:var(--open)} .now{stroke:var(--now)} .nowt{fill:var(--now)}
+    .past{opacity:.45}
+  </style>
+  <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
+
+  <text class="txt" x="44" y="76" font-size="42" font-weight="700">Saturday, October 17</text>
+  <text class="mut" x="44" y="112" font-size="22">updated 3:25 PM</text>
+
+  <rect class="heroSoft" x="44" y="146" width="780" height="360" rx="26"/>
+  <text class="hero" x="78" y="390" font-size="220" font-weight="800">62</text>
+  <text class="txt" x="390" y="262" font-size="44" font-weight="700">days to</text>
+  <text class="txt" x="390" y="316" font-size="44" font-weight="700">Christmas break</text>
+  <text class="mut" x="390" y="360" font-size="26">Friday, December 18</text>
+  <rect class="card" x="390" y="392" width="400" height="16" rx="8" stroke-width="0"/>
+  <rect class="hero" x="390" y="392" width="10" height="16" rx="8"/>
+  <text class="mut" x="390" y="442" font-size="19">day 1 of 63</text>
+
+  <rect class="card" x="44" y="532" width="780" height="300" rx="26" stroke-width="1.5"/>
+  <text class="mut" x="80" y="590" font-size="22">Inbox</text>
+  <text class="ok" x="80" y="676" font-size="96" font-weight="800">0</text>
+  <text class="mut" x="160" y="672" font-size="28">clear</text>
+  <line class="line" x1="420" y1="566" x2="420" y2="800" stroke-width="1.5"/>
+  <text class="mut" x="456" y="590" font-size="22">Priorities</text>
+  <text class="txt" x="456" y="640" font-size="28" font-weight="600">None picked yet</text>
+  <text class="mut" x="456" y="676" font-size="22">pick tonight</text>
+  <line class="line" x1="80" y1="724" x2="788" y2="724" stroke-width="1.5"/>
+  <text class="ok" x="80" y="782" font-size="26">✓ Nothing behind today</text>
+
+  <text class="txt" x="900" y="76" font-size="30" font-weight="700">Today's shape</text>
+  <g class="mut" font-size="20">
+    <text x="900" y="126">6 AM</text><text x="900" y="275">9 AM</text><text x="900" y="424">12 PM</text>
+    <text x="900" y="573">3 PM</text><text x="900" y="722">6 PM</text><text x="900" y="871">9 PM</text>
+  </g>
+  <g class="line" stroke-width="1.5">
+    <line x1="980" y1="120" x2="1760" y2="120"/><line x1="980" y1="269" x2="1760" y2="269"/><line x1="980" y1="418" x2="1760" y2="418"/>
+    <line x1="980" y1="567" x2="1760" y2="567"/><line x1="980" y1="716" x2="1760" y2="716"/><line x1="980" y1="865" x2="1760" y2="865"/>
+  </g>
+  <g font-size="22">
+    <rect class="rout past" x="990" y="96" width="770" height="172" rx="10"/>
+    <text class="mut" x="1012" y="132" text-decoration="line-through">5:30 – 9:00 · Getting Started</text>
+    <rect class="open past" x="990" y="270" width="770" height="196" rx="10"/>
+    <text class="mut" x="1012" y="306" text-decoration="line-through">9:00 – 1:00 · Open</text>
+    <rect class="rout past" x="990" y="468" width="770" height="35" rx="8"/>
+    <text class="mut" x="1012" y="494" text-decoration="line-through">1:00 – 1:45 · Lunch</text>
+    <rect class="open" x="990" y="505" width="770" height="135" rx="10"/>
+    <text class="mut" x="1012" y="541">1:45 – 4:30 · Open</text>
+    <rect class="home" x="990" y="642" width="770" height="122" rx="10"/>
+    <text class="txt" x="1012" y="678">4:30 – 7:00 · Home</text>
+    <rect class="home" x="990" y="766" width="770" height="148" rx="10"/>
+    <text class="txt" x="1012" y="802">7:00 – 10:00 · Evening</text>
+  </g>
+  <line class="now" x1="980" y1="589" x2="1760" y2="589" stroke-width="4"/>
+  <text class="nowt" x="1760" y="576" font-size="20" font-weight="700" text-anchor="end">now</text>
+
+  <text class="mut" x="44" y="968" font-size="20">Since last run: 2 PERRLA projects changed · nothing failed</text>
+</svg>
