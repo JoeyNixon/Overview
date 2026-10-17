@@ -51,7 +51,7 @@
   <text class="mut" x="72" y="704" font-size="20">Pick tomorrow's in tonight's Nightly Review</text>
 
   <text class="ok" x="44" y="872" font-size="24">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 5:05 PM · the right-now card and the red line are live · 18 PERRLA projects updated since the last run</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 6:03 PM · the right-now card and the red line are live · 6 PERRLA projects updated since the last run</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
