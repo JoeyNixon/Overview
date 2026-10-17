@@ -9,30 +9,80 @@
 <title>Overview</title>
 <style>
   html, body { margin: 0; padding: 0; height: 100%; background: transparent; overflow: hidden; }
-  /* Fit the whole graphic inside whatever box Notion gives the embed: nothing cut off, nothing to scroll. */
   #g, #g svg { display: block; width: 100%; height: 100vh; }
 </style>
 </head>
 <body>
 <div id="g"></div>
 <script>
-  // This shell never changes. A narrow or tall box (a phone) gets the stacked graphic (stacked.svg);
-  // a wide box (the Mac) gets the side-by-side one (content.svg). Always fetched past every cache.
+  // This shell never changes. It picks the layout by the embed box's shape, fetches the latest
+  // graphic past every cache, and keeps the right-now card, past blocks and red now-line live.
   let shown = "";
   function pick() {
     const w = window.innerWidth, h = window.innerHeight;
     return (w < 700 || h > w * 0.9) ? "stacked.svg" : "content.svg";
+  }
+  function fmt(min) {
+    let h = Math.floor(min / 60), m = min % 60, h12 = ((h + 11) % 12) + 1;
+    return h12 + ":" + String(m).padStart(2, "0");
+  }
+  function dur(min) {
+    if (min < 60) return min + (min === 1 ? " minute" : " minutes");
+    const h = Math.floor(min / 60), m = min % 60;
+    return h + " hr" + (m ? " " + m + " min" : "");
+  }
+  function live() {
+    const meta = document.getElementById("live");
+    if (!meta) return;
+    let d; try { d = JSON.parse(meta.textContent); } catch (e) { return; }
+    const t = new Date(), now = t.getHours() * 60 + t.getMinutes();
+    const blocks = d.blocks || [];
+    const cur = blocks.find(b => now >= b.start && now < b.end);
+    const next = blocks.find(b => b.start > now);
+    const title = document.getElementById("rn-title"), left = document.getElementById("rn-left");
+    const bar = document.getElementById("rn-bar"), bg = document.getElementById("rn-barbg"), nx = document.getElementById("rn-next");
+    if (title && left && bar && bg) {
+      const W = parseFloat(bg.getAttribute("width"));
+      if (cur) {
+        title.textContent = cur.name;
+        left.textContent = dur(cur.end - now) + " left · ends " + fmt(cur.end);
+        bar.setAttribute("width", Math.max(12, W * (now - cur.start) / (cur.end - cur.start)).toFixed(1));
+      } else if (next) {
+        title.textContent = "Open";
+        left.textContent = "until " + fmt(next.start);
+        bar.setAttribute("width", "0");
+      } else {
+        title.textContent = "Done for the day";
+        left.textContent = "nothing else scheduled";
+        bar.setAttribute("width", "0");
+      }
+    }
+    if (nx) nx.textContent = next ? "Next: " + next.name + " at " + fmt(next.start) : "";
+    document.querySelectorAll(".blk, .blkl").forEach(el => {
+      const past = parseInt(el.getAttribute("data-end"), 10) <= now;
+      el.classList.toggle("past", past);
+      if (el.tagName.toLowerCase() === "text") el.setAttribute("text-decoration", past ? "line-through" : "none");
+    });
+    const line = document.getElementById("nowline"), lab = document.getElementById("nowlabel");
+    if (line && lab && d.y6 && d.pxh) {
+      const y = d.y6 + (now / 60 - 6) * d.pxh;
+      const show = now >= 300 && now <= 1350;
+      line.setAttribute("y1", y.toFixed(1)); line.setAttribute("y2", y.toFixed(1));
+      lab.setAttribute("y", (y - 12).toFixed(1));
+      line.style.display = lab.style.display = show ? "" : "none";
+    }
   }
   async function load(force) {
     const file = pick();
     if (!force && file === shown) return;
     try {
       const r = await fetch(file + "?t=" + Date.now(), { cache: "no-store" });
-      if (r.ok) { document.getElementById("g").innerHTML = await r.text(); shown = file; }
+      if (r.ok) { document.getElementById("g").innerHTML = await r.text(); shown = file; live(); }
     } catch (e) { /* keep showing the last good graphic */ }
   }
   load(true);
   setInterval(() => load(true), 120000);
+  setInterval(live, 30000);
   window.addEventListener("resize", () => load(false));
   document.addEventListener("visibilitychange", () => { if (!document.hidden) load(true); });
 </script>
