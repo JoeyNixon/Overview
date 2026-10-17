@@ -9,23 +9,28 @@
 <title>Overview</title>
 <style>
   html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
-  /* Fill the embed's full width; height follows the graphic's shape. Size the Notion embed's height to fit. */
   #g svg { display: block; width: 100%; height: auto; }
 </style>
 </head>
 <body>
 <div id="g"></div>
 <script>
-  // This shell never changes. It pulls the latest graphic past every cache, now and every 2 minutes.
-  async function load() {
+  // This shell never changes. Wide space gets the side-by-side graphic (content.svg),
+  // narrow space (a phone) gets the stacked one (stacked.svg). Always fetched past every cache.
+  let shown = "";
+  function pick() { return window.innerWidth < 700 ? "stacked.svg" : "content.svg"; }
+  async function load(force) {
+    const file = pick();
+    if (!force && file === shown) return;
     try {
-      const r = await fetch("content.svg?t=" + Date.now(), { cache: "no-store" });
-      if (r.ok) document.getElementById("g").innerHTML = await r.text();
+      const r = await fetch(file + "?t=" + Date.now(), { cache: "no-store" });
+      if (r.ok) { document.getElementById("g").innerHTML = await r.text(); shown = file; }
     } catch (e) { /* keep showing the last good graphic */ }
   }
-  load();
-  setInterval(load, 120000);
-  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+  load(true);
+  setInterval(() => load(true), 120000);
+  window.addEventListener("resize", () => load(false));
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(true); });
 </script>
 </body>
 </html>
