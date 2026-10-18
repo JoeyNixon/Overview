@@ -29,7 +29,7 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Home</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 8:00</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="2" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="284" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Evening</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
@@ -48,7 +48,7 @@
   <text class="txt" x="76" y="816" font-size="38" font-weight="600">None picked yet</text>
   <text class="mut" x="76" y="862" font-size="28">Pick tomorrow's in tonight's review</text>
 
-  <text class="warn" x="40" y="966" font-size="34">⚠ 4 routines left from Getting Started</text>
+  <text class="warn" x="40" y="966" font-size="34">⚠ 4 routines left from Getting Started · 5 goals open</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -69,8 +69,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1744" width="800" height="92" rx="12"/>
     <text class="txt blkl" data-end="1320" x="184" y="1786">8:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1606" x2="960" y2="1606" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1593" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1652" x2="960" y2="1652" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1639" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 5:00 PM · 2 PERRLA projects updated</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 6:00 PM · nothing changed</text>
 </svg>
