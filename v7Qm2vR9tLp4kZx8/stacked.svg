@@ -26,11 +26,11 @@
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
   <text class="n3" x="76" y="256" font-size="24" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Home</text>
-  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 7:00</text>
+  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Evening</text>
+  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 10:00</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="120" height="16" rx="8"/>
-  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Evening at 7:00</text>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="292" height="16" rx="8"/>
+  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Last block today</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
@@ -39,8 +39,8 @@
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">5</text>
-  <text class="mut" x="622" y="604" font-size="30">left · 4 done</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">4</text>
+  <text class="mut" x="622" y="604" font-size="30">left · 1 done</text>
   <text class="mut" x="622" y="640" font-size="26">none overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="200" rx="28" stroke-width="2"/>
@@ -48,7 +48,7 @@
   <text class="txt" x="76" y="816" font-size="38" font-weight="600">None picked yet</text>
   <text class="mut" x="76" y="862" font-size="28">Pick tomorrow's in tonight's review</text>
 
-  <text class="ok" x="40" y="966" font-size="34">✓ Nothing behind today</text>
+  <text class="warn" x="40" y="966" font-size="34">⚠ 5 goals open</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -60,21 +60,21 @@
     <line x1="150" y1="1514" x2="960" y2="1514"/><line x1="150" y1="1652" x2="960" y2="1652"/><line x1="150" y1="1790" x2="960" y2="1790"/>
   </g>
   <g font-size="30">
-    <rect class="rout blk" data-end="540" x="160" y="1078" width="800" height="158" rx="12"/>
-    <text class="mut blkl" data-end="540" x="184" y="1120">5:30 – 9:00 · Getting Started</text>
-    <rect class="open blk" data-end="780" x="160" y="1240" width="800" height="180" rx="12"/>
-    <text class="mut blkl" data-end="780" x="184" y="1282">9:00 – 1:00 · Open</text>
-    <rect class="rout blk" data-end="825" x="160" y="1424" width="800" height="31" rx="10"/>
-    <text class="mut blkl" data-end="825" x="184" y="1450" font-size="24">1:00 – 1:45 · Lunch</text>
-    <rect class="open blk" data-end="990" x="160" y="1458" width="800" height="123" rx="12"/>
-    <text class="mut blkl" data-end="990" x="184" y="1500">1:45 – 4:30 · Open</text>
-    <rect class="home blk" data-end="1140" x="160" y="1584" width="800" height="112" rx="12"/>
-    <text class="txt blkl" data-end="1140" x="184" y="1626">4:30 – 7:00 · Home</text>
+    <rect class="rout blk past" data-end="540" x="160" y="1078" width="800" height="158" rx="12"/>
+    <text class="mut blkl past" data-end="540" x="184" y="1120">5:30 – 9:00 · Getting Started</text>
+    <rect class="open blk past" data-end="780" x="160" y="1240" width="800" height="180" rx="12"/>
+    <text class="mut blkl past" data-end="780" x="184" y="1282">9:00 – 1:00 · Open</text>
+    <rect class="rout blk past" data-end="825" x="160" y="1424" width="800" height="31" rx="10"/>
+    <text class="mut blkl past" data-end="825" x="184" y="1450" font-size="24">1:00 – 1:45 · Lunch</text>
+    <rect class="open blk past" data-end="990" x="160" y="1458" width="800" height="123" rx="12"/>
+    <text class="mut blkl past" data-end="990" x="184" y="1500">1:45 – 4:30 · Open</text>
+    <rect class="home blk past" data-end="1140" x="160" y="1584" width="800" height="112" rx="12"/>
+    <text class="txt blkl past" data-end="1140" x="184" y="1626">4:30 – 7:00 · Home</text>
     <rect class="home blk" data-end="1320" x="160" y="1699" width="800" height="137" rx="12"/>
     <text class="txt blkl" data-end="1320" x="184" y="1741">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1606" x2="960" y2="1606" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1590" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1746" x2="960" y2="1746" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1730" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 6:03 PM · right now and the red line are live</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 8:02 PM · right now and the red line are live</text>
 </svg>
