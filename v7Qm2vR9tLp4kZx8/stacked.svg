@@ -76,5 +76,5 @@
   <line id="nowline" class="now" x1="150" y1="1746" x2="960" y2="1746" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1730" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 11:01 PM · right now and the red line are live</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 12:02 AM · right now and the red line are live</text>
 </svg>
