@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date":"2026-10-17","y6":120,"pxh":49.7,"blocks":[{"name":"Getting Started","start":330,"end":540},{"name":"Open","start":540,"end":780},{"name":"Lunch","start":780,"end":825},{"name":"Open","start":825,"end":990},{"name":"Home","start":990,"end":1140},{"name":"Evening","start":1140,"end":1320}]}</metadata>
-  <style>
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet"&gt;
+  &lt;metadata id="live"&gt;{"date":"2026-10-17","y6":120,"pxh":49.7,"blocks":[{"name":"Getting Started","start":330,"end":540},{"name":"Open","start":540,"end":780},{"name":"Lunch","start":780,"end":825},{"name":"Open","start":825,"end":990},{"name":"Home","start":990,"end":1140},{"name":"Evening","start":1140,"end":1320}]}&lt;/metadata&gt;
+  &lt;style&gt;
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
             --warn:#B4560B; --warnSoft:#FBEBDD; --ok:#2F7D4F; --rout:#FBEBC8; --work:#CFE8E2; --home:#E8E1F5; --mtg:#D3E5F7; --open:#EFEEEC; --now:#E03E3E; }
@@ -15,68 +15,68 @@
     .n1{fill:var(--now1)} .n2{fill:var(--now2)} .n3{fill:var(--now3)} .inbox{fill:var(--inbox)} .due{fill:var(--due)}
     .rout{fill:var(--rout)} .work{fill:var(--work)} .home{fill:var(--home)} .mtg{fill:var(--mtg)} .open{fill:var(--open)} .now{stroke:var(--now)} .nowt{fill:var(--now)}
     .past{opacity:.45}
-  </style>
-  <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
+  &lt;/style&gt;
+  &lt;rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/&gt;
 
-  <!-- left column -->
-  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Saturday, October 17</text>
+  &lt;!-- left column --&gt;
+  &lt;text class="txt" x="44" y="84" font-size="54" font-weight="700"&gt;Saturday, October 17&lt;/text&gt;
 
-  <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
-  <text class="hero" x="66" y="146" font-size="30" font-weight="800">62</text>
-  <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
-  <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
+  &lt;rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/&gt;
+  &lt;text class="hero" x="66" y="146" font-size="30" font-weight="800"&gt;62&lt;/text&gt;
+  &lt;text class="txt" x="116" y="143" font-size="21" font-weight="600"&gt;days to Christmas break&lt;/text&gt;
+  &lt;text class="mut" x="380" y="143" font-size="18"&gt;· Friday, December 18&lt;/text&gt;
 
-  <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
-  <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Home</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 7:00</text>
-  <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="100" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Evening at 7:00</text>
+  &lt;rect class="n1" x="44" y="182" width="780" height="196" rx="20"/&gt;
+  &lt;text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1"&gt;RIGHT NOW&lt;/text&gt;
+  &lt;text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700"&gt;Evening&lt;/text&gt;
+  &lt;text id="rn-left" class="n3" x="72" y="300" font-size="21"&gt;until 10:00&lt;/text&gt;
+  &lt;rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/&gt;
+  &lt;rect id="rn-bar" class="n3" x="72" y="316" width="250" height="12" rx="6"/&gt;
+  &lt;text id="rn-next" class="n2" x="72" y="358" font-size="19"&gt;Last block today&lt;/text&gt;
 
-  <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
-  <text class="ok" x="72" y="516" font-size="76" font-weight="800">0</text>
-  <text class="mut" x="132" y="500" font-size="22">clear</text>
+  &lt;rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/&gt;
+  &lt;text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1"&gt;INBOX&lt;/text&gt;
+  &lt;text class="ok" x="72" y="516" font-size="76" font-weight="800"&gt;0&lt;/text&gt;
+  &lt;text class="mut" x="132" y="500" font-size="22"&gt;clear&lt;/text&gt;
 
-  <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">5</text>
-  <text class="mut" x="532" y="494" font-size="22">left · 4 done</text>
-  <text class="mut" x="532" y="522" font-size="18">none overdue</text>
+  &lt;rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/&gt;
+  &lt;text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1"&gt;DUE TODAY&lt;/text&gt;
+  &lt;text class="due" x="472" y="516" font-size="76" font-weight="800"&gt;4&lt;/text&gt;
+  &lt;text class="mut" x="532" y="494" font-size="22"&gt;left · 1 done&lt;/text&gt;
+  &lt;text class="mut" x="532" y="522" font-size="18"&gt;none overdue&lt;/text&gt;
 
-  <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES</text>
-  <text class="txt" x="72" y="668" font-size="28" font-weight="600">None picked yet</text>
-  <text class="mut" x="72" y="704" font-size="20">Pick tomorrow's in tonight's Nightly Review</text>
+  &lt;rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/&gt;
+  &lt;text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1"&gt;PRIORITIES&lt;/text&gt;
+  &lt;text class="txt" x="72" y="668" font-size="28" font-weight="600"&gt;None picked yet&lt;/text&gt;
+  &lt;text class="mut" x="72" y="704" font-size="20"&gt;Pick tomorrow's in tonight's Nightly Review&lt;/text&gt;
 
-  <text class="ok" x="44" y="872" font-size="24">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 6:03 PM · the right-now card and the red line are live · 6 PERRLA projects updated since the last run</text>
+  &lt;text class="warn" x="44" y="872" font-size="24"&gt;⚠ 5 goals open&lt;/text&gt;
+  &lt;text class="mut" x="44" y="966" font-size="18"&gt;updated 8:02 PM · the right-now card and the red line are live · 1 PERRLA project re-synced since the last run&lt;/text&gt;
 
-  <!-- right column: today's shape -->
-  <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
-  <g class="mut" font-size="20">
-    <text x="900" y="126">6 AM</text><text x="900" y="275">9 AM</text><text x="900" y="424">12 PM</text>
-    <text x="900" y="573">3 PM</text><text x="900" y="722">6 PM</text><text x="900" y="871">9 PM</text>
-  </g>
-  <g class="line" stroke-width="1.5">
-    <line x1="980" y1="120" x2="1760" y2="120"/><line x1="980" y1="269" x2="1760" y2="269"/><line x1="980" y1="418" x2="1760" y2="418"/>
-    <line x1="980" y1="567" x2="1760" y2="567"/><line x1="980" y1="716" x2="1760" y2="716"/><line x1="980" y1="865" x2="1760" y2="865"/>
-  </g>
-  <g font-size="22">
-    <rect class="rout blk" data-end="540" x="990" y="96" width="770" height="172" rx="10"/>
-    <text class="mut blkl" data-end="540" x="1012" y="132">5:30 – 9:00 · Getting Started</text>
-    <rect class="open blk" data-end="780" x="990" y="270" width="770" height="196" rx="10"/>
-    <text class="mut blkl" data-end="780" x="1012" y="306">9:00 – 1:00 · Open</text>
-    <rect class="rout blk" data-end="825" x="990" y="468" width="770" height="35" rx="8"/>
-    <text class="mut blkl" data-end="825" x="1012" y="494">1:00 – 1:45 · Lunch</text>
-    <rect class="open blk" data-end="990" x="990" y="505" width="770" height="135" rx="10"/>
-    <text class="mut blkl" data-end="990" x="1012" y="541">1:45 – 4:30 · Open</text>
-    <rect class="home blk" data-end="1140" x="990" y="642" width="770" height="122" rx="10"/>
-    <text class="txt blkl" data-end="1140" x="1012" y="678">4:30 – 7:00 · Home</text>
-    <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="148" rx="10"/>
-    <text class="txt blkl" data-end="1320" x="1012" y="802">7:00 – 10:00 · Evening</text>
-  </g>
-  <line id="nowline" class="now" x1="980" y1="671" x2="1760" y2="671" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="658" font-size="20" font-weight="700" text-anchor="end">now</text>
-</svg>
+  &lt;!-- right column: today's shape --&gt;
+  &lt;text class="txt" x="900" y="84" font-size="30" font-weight="700"&gt;Today's shape&lt;/text&gt;
+  &lt;g class="mut" font-size="20"&gt;
+    &lt;text x="900" y="126"&gt;6 AM&lt;/text&gt;&lt;text x="900" y="275"&gt;9 AM&lt;/text&gt;&lt;text x="900" y="424"&gt;12 PM&lt;/text&gt;
+    &lt;text x="900" y="573"&gt;3 PM&lt;/text&gt;&lt;text x="900" y="722"&gt;6 PM&lt;/text&gt;&lt;text x="900" y="871"&gt;9 PM&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;g class="line" stroke-width="1.5"&gt;
+    &lt;line x1="980" y1="120" x2="1760" y2="120"/&gt;&lt;line x1="980" y1="269" x2="1760" y2="269"/&gt;&lt;line x1="980" y1="418" x2="1760" y2="418"/&gt;
+    &lt;line x1="980" y1="567" x2="1760" y2="567"/&gt;&lt;line x1="980" y1="716" x2="1760" y2="716"/&gt;&lt;line x1="980" y1="865" x2="1760" y2="865"/&gt;
+  &lt;/g&gt;
+  &lt;g font-size="22"&gt;
+    &lt;rect class="rout blk past" data-end="540" x="990" y="96" width="770" height="172" rx="10"/&gt;
+    &lt;text class="mut blkl past" data-end="540" x="1012" y="132"&gt;5:30 – 9:00 · Getting Started&lt;/text&gt;
+    &lt;rect class="open blk past" data-end="780" x="990" y="270" width="770" height="196" rx="10"/&gt;
+    &lt;text class="mut blkl past" data-end="780" x="1012" y="306"&gt;9:00 – 1:00 · Open&lt;/text&gt;
+    &lt;rect class="rout blk past" data-end="825" x="990" y="468" width="770" height="35" rx="8"/&gt;
+    &lt;text class="mut blkl past" data-end="825" x="1012" y="494"&gt;1:00 – 1:45 · Lunch&lt;/text&gt;
+    &lt;rect class="open blk past" data-end="990" x="990" y="505" width="770" height="135" rx="10"/&gt;
+    &lt;text class="mut blkl past" data-end="990" x="1012" y="541"&gt;1:45 – 4:30 · Open&lt;/text&gt;
+    &lt;rect class="home blk past" data-end="1140" x="990" y="642" width="770" height="122" rx="10"/&gt;
+    &lt;text class="txt blkl past" data-end="1140" x="1012" y="678"&gt;4:30 – 7:00 · Home&lt;/text&gt;
+    &lt;rect class="home blk" data-end="1320" x="990" y="766" width="770" height="148" rx="10"/&gt;
+    &lt;text class="txt blkl" data-end="1320" x="1012" y="802"&gt;7:00 – 10:00 · Evening&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;line id="nowline" class="now" x1="980" y1="818" x2="1760" y2="818" stroke-width="4"/&gt;
+  &lt;text id="nowlabel" class="nowt" x="1760" y="805" font-size="20" font-weight="700" text-anchor="end"&gt;now&lt;/text&gt;
+&lt;/svg&gt;
