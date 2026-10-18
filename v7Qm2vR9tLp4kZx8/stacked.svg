@@ -29,7 +29,7 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Driving</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 5:00</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="595.01" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="678.4" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Home</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
@@ -69,8 +69,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1744" width="800" height="92" rx="12"/>
     <text class="txt blkl" data-end="1320" x="184" y="1786">8:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1468.77" x2="960" y2="1468.77" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1455.77" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1514" x2="960" y2="1514" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1501" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 2:01 PM · nothing changed since the last run</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 3:00 PM · nothing changed since the last run</text>
 </svg>
