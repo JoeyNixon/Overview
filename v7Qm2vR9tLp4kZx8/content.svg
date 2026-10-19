@@ -1,1 +1,97 @@
-&lt;PLACEHOLDER&gt;
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
+  <metadata id="live">{"date": "2026-10-19", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Meeting", "start": 540, "end": 600}, {"name": "Meeting", "start": 600, "end": 630}, {"name": "Work Block", "start": 630, "end": 660}, {"name": "Office Hours", "start": 660, "end": 705}, {"name": "Work Block", "start": 705, "end": 750}, {"name": "Lunch", "start": 750, "end": 825}, {"name": "Work Block", "start": 825, "end": 900}, {"name": "Meeting", "start": 900, "end": 960}, {"name": "Work Block", "start": 960, "end": 975}, {"name": "Wrap Up", "start": 975, "end": 1005}, {"name": "Home", "start": 1005, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
+  <style>
+    :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
+            --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
+            --warn:#B4560B; --warnSoft:#FBEBDD; --ok:#2F7D4F; --rout:#FBEBC8; --work:#CFE8E2; --home:#E8E1F5; --mtg:#D3E5F7; --open:#EFEEEC; --now:#E03E3E; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#191919; --card:#252525; --line:#333333; --txt:#EDEDED; --mut:#9B9B9B; --hero:#4FD1B5; --heroSoft:#1F3D36;
+              --now1:#1F4D44; --now2:#E1F5EE; --now3:#9FE1CB; --inbox:#5AA9FF; --due:#FF9F5A;
+              --warn:#FF9F5A; --warnSoft:#4D3017; --ok:#4FD1B5; --rout:#4D3B17; --work:#1F4D44; --home:#3A2F5A; --mtg:#1D3A5C; --open:#2A2A2A; --now:#FF5C5C; }
+    }
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .bg{fill:var(--bg)} .card{fill:var(--card);stroke:var(--line)} .txt{fill:var(--txt)} .mut{fill:var(--mut)} .line{stroke:var(--line)}
+    .hero{fill:var(--hero)} .heroSoft{fill:var(--heroSoft)} .ok{fill:var(--ok)} .warn{fill:var(--warn)} .warnSoft{fill:var(--warnSoft)}
+    .n1{fill:var(--now1)} .n2{fill:var(--now2)} .n3{fill:var(--now3)} .inbox{fill:var(--inbox)} .due{fill:var(--due)}
+    .rout{fill:var(--rout)} .work{fill:var(--work)} .home{fill:var(--home)} .mtg{fill:var(--mtg)} .open{fill:var(--open)} .now{stroke:var(--now)} .nowt{fill:var(--now)}
+    .past{opacity:.45}
+  </style>
+  <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
+
+  <!-- left column -->
+  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Monday, October 19</text>
+
+  <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
+  <text class="hero" x="66" y="146" font-size="30" font-weight="800">60</text>
+  <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
+  <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
+
+  <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
+  <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
+  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Lunch</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 1:45</text>
+  <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="338" height="12" rx="6"/>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Work Block</text>
+
+  <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
+  <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
+  <text class="txt" x="72" y="516" font-size="76" font-weight="800">8</text>
+  <text class="mut" x="132" y="494" font-size="22">to file</text>
+  <text class="mut" x="132" y="522" font-size="18">oldest ~35m</text>
+
+  <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
+  <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">28</text>
+  <text class="mut" x="552" y="494" font-size="22">left · 2 done</text>
+  <text class="mut" x="552" y="522" font-size="18">none overdue</text>
+
+  <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES</text>
+  <text class="txt" x="72" y="668" font-size="28" font-weight="600">None picked yet</text>
+  <text class="mut" x="72" y="704" font-size="20">No Now items picked for today</text>
+
+  <text class="warn" x="44" y="872" font-size="24">⚠ 2 routines left from Getting Started</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 1:05 PM · 2 Serena items synced · 2 tasks done · Work Block struck</text>
+
+  <!-- right column: today's shape -->
+  <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
+  <g class="mut" font-size="20">
+    <text x="900" y="126">6 AM</text><text x="900" y="275">9 AM</text><text x="900" y="424">12 PM</text>
+    <text x="900" y="573">3 PM</text><text x="900" y="722">6 PM</text><text x="900" y="871">9 PM</text>
+  </g>
+  <g class="line" stroke-width="1.5">
+    <line x1="980" y1="120" x2="1760" y2="120"/><line x1="980" y1="269" x2="1760" y2="269"/><line x1="980" y1="418" x2="1760" y2="418"/>
+    <line x1="980" y1="567" x2="1760" y2="567"/><line x1="980" y1="716" x2="1760" y2="716"/><line x1="980" y1="865" x2="1760" y2="865"/>
+  </g>
+  <g font-size="18">
+    <rect class="rout blk" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
+    <text class="mut blkl" data-end="540" x="1012" y="189">5:30 – 9:00 · Getting Started</text>
+    <rect class="mtg blk" data-end="600" x="990" y="269" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="600" x="1012" y="301">9:00 – 10:00 · Meeting</text>
+    <rect class="mtg blk" data-end="630" x="990" y="319" width="770" height="25" rx="10"/>
+    <text class="mut blkl" data-end="630" x="1012" y="338">10:00 – 10:30 · Meeting</text>
+    <rect class="work blk" data-end="660" x="990" y="344" width="770" height="24" rx="10"/>
+    <text class="mut blkl" data-end="660" x="1012" y="363">10:30 – 11:00 · Work Block</text>
+    <rect class="work blk" data-end="705" x="990" y="368" width="770" height="38" rx="10"/>
+    <text class="mut blkl" data-end="705" x="1012" y="394">11:00 – 11:45 · Office Hours</text>
+    <rect class="work blk" data-end="750" x="990" y="406" width="770" height="37" rx="10"/>
+    <text class="mut blkl" data-end="750" x="1012" y="431">11:45 – 12:30 · Work Block</text>
+    <rect class="rout blk" data-end="825" x="990" y="443" width="770" height="62" rx="10"/>
+    <text class="mut blkl" data-end="825" x="1012" y="481">12:30 – 1:45 · Lunch</text>
+    <rect class="work blk" data-end="900" x="990" y="505" width="770" height="62" rx="10"/>
+    <text class="mut blkl" data-end="900" x="1012" y="543">1:45 – 3:00 · Work Block</text>
+    <rect class="mtg blk" data-end="960" x="990" y="567" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="960" x="1012" y="599">3:00 – 4:00 · Meeting</text>
+    <rect class="work blk" data-end="975" x="990" y="617" width="770" height="12" rx="10"/>
+    <text class="mut blkl" data-end="975" x="1012" y="630">4:00 – 4:15 · Work Block</text>
+    <rect class="rout blk" data-end="1005" x="990" y="629" width="770" height="25" rx="10"/>
+    <text class="mut blkl" data-end="1005" x="1012" y="648">4:15 – 4:45 · Wrap Up</text>
+    <rect class="home blk" data-end="1140" x="990" y="654" width="770" height="112" rx="10"/>
+    <text class="mut blkl" data-end="1140" x="1012" y="717">4:45 – 7:00 · Home</text>
+    <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
+    <text class="mut blkl" data-end="1320" x="1012" y="847">7:00 – 10:00 · Evening</text>
+  </g>
+  <line id="nowline" class="now" x1="980" y1="472" x2="1760" y2="472" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="459" font-size="20" font-weight="700" text-anchor="end">now</text>
+</svg>
