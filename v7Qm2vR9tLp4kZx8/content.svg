@@ -50,8 +50,8 @@
   <text class="txt" x="72" y="668" font-size="28" font-weight="600">None picked yet</text>
   <text class="mut" x="72" y="704" font-size="20">No Now items picked for today</text>
 
-  <text class="ok" x="44" y="872" font-size="24">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 6:06 AM · 1 PERRLA task added</text>
+  <text class="warn" x="44" y="872" font-size="24">⚠ 4 routines left from Getting Started</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 9:03 AM · 3 PERRLA projects changed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
