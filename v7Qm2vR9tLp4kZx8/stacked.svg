@@ -48,7 +48,7 @@
   <text class="txt" x="76" y="816" font-size="38" font-weight="600">None picked yet</text>
   <text class="mut" x="76" y="862" font-size="28">No Now items picked for today</text>
 
-  <text class="ok" x="40" y="966" font-size="34">✓ Nothing behind today</text>
+  <text class="warn" x="40" y="966" font-size="34">⚠ 4 routines left from Getting Started</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -90,5 +90,5 @@
   <line id="nowline" class="now" x1="150" y1="1105" x2="960" y2="1105" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1092" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 6:06 AM · 1 PERRLA task added</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 9:03 AM · 3 PERRLA projects changed</text>
 </svg>
