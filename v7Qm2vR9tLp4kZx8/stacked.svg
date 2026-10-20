@@ -29,7 +29,7 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Work Block</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 1:00</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="223" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="431" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Lunch</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
@@ -45,14 +45,14 @@
   <text class="mut" x="622" y="640" font-size="26">none overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="200" rx="28" stroke-width="2"/>
-  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
+  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 5 done</text>
   <g font-size="19">
     <text class="txt" x="76" y="772" font-weight="600">Suite C Availability</text>
     <text class="mut" x="520" y="772">0 of 2 steps</text>
     <text class="txt" x="76" y="800" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="520" y="800">not started</text>
     <text class="txt" x="76" y="828" font-weight="600">perrla.com launch: Webflow → Cloudflare Pages</text>
-    <text class="mut" x="520" y="828">11 of 14 steps</text>
+    <text class="mut" x="520" y="828">done</text>
     <text class="txt" x="76" y="856" font-weight="600">MSAI 531 Discussion 1</text>
     <text class="mut" x="520" y="856">0 of 5 steps</text>
     <text class="txt" x="76" y="884" font-weight="600">MSAI 531 Week 1 Reading</text>
@@ -90,8 +90,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1698" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1772" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1286" x2="960" y2="1286" stroke-width="5"/>
+  <line id="nowline" class="now" x1="150" y1="1332" x2="960" y2="1332" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1064" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 10:03 AM · 1 PERRLA project progressed · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 11:02 AM · 1 PERRLA project done · nothing failed</text>
 </svg>
