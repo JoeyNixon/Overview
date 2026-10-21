@@ -26,40 +26,42 @@
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
   <text class="n3" x="76" y="256" font-size="24" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Evening</text>
-  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 10:00</text>
+  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Night</text>
+  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 5:30</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="283" height="16" rx="8"/>
-  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Go To Bed</text>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="0" height="16" rx="8"/>
+  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Getting Started</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
-  <text class="inbox" x="76" y="636" font-size="76" font-weight="800">8</text>
+  <text class="inbox" x="76" y="636" font-size="76" font-weight="800">1</text>
   <text class="mut" x="152" y="604" font-size="30">to file</text>
-  <text class="mut" x="152" y="640" font-size="26">oldest 8h43m</text>
+  <text class="mut" x="152" y="640" font-size="26">oldest 1h41m</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">22</text>
-  <text class="mut" x="622" y="604" font-size="30">left · 6 done</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">0</text>
+  <text class="mut" x="622" y="604" font-size="30">left · 5 done</text>
   <text class="mut" x="622" y="640" font-size="26">none overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="200" rx="28" stroke-width="2"/>
-  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 5 done</text>
+  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 6 done</text>
   <g font-size="19">
-    <text class="txt" x="76" y="772" font-weight="600">Suite C Availability</text>
-    <text class="mut" x="520" y="772">0 of 2 steps</text>
-    <text class="txt" x="76" y="800" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="520" y="800">0 of 7 steps</text>
-    <text class="txt" x="76" y="828" font-weight="600">perrla.com launch: Webflow → Cloudflare Pages</text>
-    <text class="mut" x="520" y="828">done</text>
-    <text class="txt" x="76" y="856" font-weight="600">MSAI 531 Discussion 1</text>
-    <text class="mut" x="520" y="856">0 of 5 steps</text>
-    <text class="txt" x="76" y="884" font-weight="600">MSAI 531 Week 1 Reading</text>
-    <text class="mut" x="520" y="884">0 of 3 steps</text>
+    <text class="txt" x="76" y="770" font-weight="600">SQL Server Schema Consolidation</text>
+    <text class="mut" x="520" y="770">0 of 7 steps</text>
+    <text class="txt" x="76" y="794" font-weight="600">MSAI 531 Student Introductions</text>
+    <text class="mut" x="520" y="794">0 of 2 steps</text>
+    <text class="txt" x="76" y="818" font-weight="600">MSAI 531 Discussion 1</text>
+    <text class="mut" x="520" y="818">0 of 5 steps</text>
+    <text class="txt" x="76" y="842" font-weight="600">Move Rest of Monday.com to Serena</text>
+    <text class="mut" x="520" y="842">1 of 6 steps</text>
+    <text class="txt" x="76" y="866" font-weight="600">MSAI 531 Week 1 Presentation</text>
+    <text class="mut" x="520" y="866">not started</text>
+    <text class="txt" x="76" y="890" font-weight="600">MSAI 531 Week 1 Reading</text>
+    <text class="mut" x="520" y="890">0 of 3 steps</text>
   </g>
 
-  <text class="warn" x="40" y="966" font-size="34">⚠ 5 routines left from Getting Started, Wrap Up · 5 goals open</text>
+  <text class="warn" x="40" y="966" font-size="34">⚠ 1 routine left from Getting Started · 5 goals open</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -90,8 +92,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1698" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1772" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1744" x2="960" y2="1744" stroke-width="5"/>
+  <line id="nowline" class="now" x1="150" y1="1077" x2="960" y2="1077" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1064" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 8:00 PM · 2 routines carried forward · 1 task flagged for review · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 12:08 AM · 1 PERRLA item synced · nothing failed</text>
 </svg>
