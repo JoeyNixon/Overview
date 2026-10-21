@@ -28,43 +28,43 @@
 
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Work Block</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 1:00</text>
+  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Lunch</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 1:45</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="362" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Lunch</text>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="80" height="12" rx="6"/>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Work Block</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">6</text>
   <text class="mut" x="132" y="494" font-size="22">to file</text>
-  <text class="mut" x="132" y="522" font-size="18">oldest 12h33m</text>
+  <text class="mut" x="132" y="522" font-size="18">oldest ~13h</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">20</text>
-  <text class="mut" x="552" y="494" font-size="22">left · 3 done</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">17</text>
+  <text class="mut" x="552" y="494" font-size="22">left · 9 done</text>
   <text class="mut" x="552" y="522" font-size="18">none overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 6 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 2 of 6 done</text>
   <g font-size="17">
     <text class="txt" x="72" y="640" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="500" y="640">0 of 7 steps</text>
     <text class="txt" x="72" y="670" font-weight="600">MSAI 531 Student Introductions</text>
-    <text class="mut" x="500" y="670">0 of 2 steps</text>
+    <text class="mut" x="500" y="670">done</text>
     <text class="txt" x="72" y="700" font-weight="600">MSAI 531 Discussion 1</text>
     <text class="mut" x="500" y="700">0 of 5 steps</text>
     <text class="txt" x="72" y="730" font-weight="600">Move Rest of Monday.com to Serena</text>
     <text class="mut" x="500" y="730">1 of 6 steps</text>
     <text class="txt" x="72" y="760" font-weight="600">MSAI 531 Week 1 Presentation</text>
-    <text class="mut" x="500" y="760">not started</text>
+    <text class="mut" x="500" y="760">done</text>
     <text class="txt" x="72" y="790" font-weight="600">MSAI 531 Week 1 Reading</text>
     <text class="mut" x="500" y="790">0 of 3 steps</text>
   </g>
 
   <text class="ok" x="44" y="872" font-size="24">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 11:00 AM · 2 tasks closed · 4 Serena items re-synced · 4 inbox items stamped</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 1:05 PM · 1 project closed · 1 new PERRLA item · 1 PERRLA item updated · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -79,8 +79,8 @@
   <g font-size="18">
     <rect class="rout blk past" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
     <text class="mut blkl past" data-end="540" x="1012" y="188">5:30 – 9:00 · Getting Started</text>
-    <rect class="work blk" data-end="780" x="990" y="269" width="770" height="199" rx="10"/>
-    <text class="mut blkl" data-end="780" x="1012" y="374">9:00 – 1:00 · Work Block</text>
+    <rect class="work blk past" data-end="780" x="990" y="269" width="770" height="199" rx="10"/>
+    <text class="mut blkl past" data-end="780" x="1012" y="374">9:00 – 1:00 · Work Block</text>
     <rect class="rout blk" data-end="825" x="990" y="468" width="770" height="37" rx="10"/>
     <text class="mut blkl" data-end="825" x="1012" y="493">1:00 – 1:45 · Lunch</text>
     <rect class="work blk" data-end="900" x="990" y="505" width="770" height="62" rx="10"/>
@@ -98,6 +98,6 @@
     <rect class="home blk" data-end="1320" x="990" y="791" width="770" height="124" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="859">7:30 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="369" x2="1760" y2="369" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="356" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="472" x2="1760" y2="472" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="459" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
