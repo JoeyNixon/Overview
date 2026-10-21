@@ -62,7 +62,7 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="24">⚠ 5 routines left from Getting Started, Wrap Up · 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 8:00 PM · 2 routines carried forward · 1 new PERRLA task · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 8:00 PM · 2 routines carried forward · 1 task flagged for review · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
