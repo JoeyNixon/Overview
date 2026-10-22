@@ -41,9 +41,9 @@
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">25</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">27</text>
   <text class="mut" x="552" y="494" font-size="22">left · 0 done</text>
-  <text class="mut" x="552" y="522" font-size="18">1 overdue</text>
+  <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 4 done</text>
@@ -59,7 +59,7 @@
   </g>
 
   <text class="mut" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 5:00 AM · no change since the 4 AM roll · due-today count corrected 24→25 · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 5:00 AM · 3 PERRLA projects re-dated today (standing exception) · due today 27, 0 overdue · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
