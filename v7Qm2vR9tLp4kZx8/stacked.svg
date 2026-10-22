@@ -26,11 +26,11 @@
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
   <text class="n3" x="76" y="256" font-size="24" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Kids pickup</text>
-  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 3:30 PM</text>
+  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Wrap Up</text>
+  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 4:30 PM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="161" height="16" rx="8"/>
-  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Wrap Up</text>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="424" height="16" rx="8"/>
+  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Home</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
@@ -39,7 +39,7 @@
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">27</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">28</text>
   <text class="mut" x="622" y="604" font-size="30">left · 1 done</text>
   <text class="mut" x="622" y="640" font-size="26">0 overdue</text>
 
@@ -93,8 +93,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1698" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1773" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1518" x2="960" y2="1518" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1505" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1560" x2="960" y2="1560" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1547" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 3:05 PM · 1 PERRLA project added, 1 Serena item updated · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 4:00 PM · 1 PERRLA project updated · nothing failed</text>
 </svg>
