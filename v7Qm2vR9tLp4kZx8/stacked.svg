@@ -29,26 +29,26 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Work Block</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 3:30 PM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="121" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="614" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Wrap Up</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="152" y="604" font-size="30">to file</text>
-  <text class="mut" x="152" y="640" font-size="26">oldest ~3 hr</text>
+  <text class="mut" x="152" y="640" font-size="26">oldest ~4 hr</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="546" y="636" font-size="100" font-weight="800">22</text>
-  <text class="mut" x="622" y="604" font-size="30">left · 1 done</text>
+  <text class="mut" x="622" y="604" font-size="30">left · 2 done</text>
   <text class="mut" x="622" y="640" font-size="26">0 overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="200" rx="28" stroke-width="2"/>
-  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 6 done</text>
+  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 6 done</text>
   <g font-size="19">
     <text class="txt" x="76" y="770" font-weight="600">MSAI 531 Discussion 1</text>
-    <text class="mut" x="520" y="770">0 of 5 steps</text>
+    <text class="mut" x="520" y="770">done</text>
     <text class="txt" x="76" y="794" font-weight="600">MSAI 531 Project 1</text>
     <text class="mut" x="520" y="794">1 of 7 steps</text>
     <text class="txt" x="76" y="818" font-weight="600">MSAI 531 Week 1 Reading</text>
@@ -61,7 +61,7 @@
     <text class="mut" x="520" y="890">review open (your move)</text>
   </g>
 
-  <text class="warn" x="40" y="966" font-size="26">⚠ 3 routines left from Getting Started · 1 routine left from Lunch</text>
+  <text class="warn" x="40" y="966" font-size="26">⚠ 2 routines left from Getting Started · 1 routine left from Lunch</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -90,8 +90,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1699" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1771" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1468" x2="960" y2="1468" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1455" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1515" x2="960" y2="1515" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1502" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 2:00 PM · 4 PERRLA items synced · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 3:01 PM · 2 PERRLA items synced · nothing failed</text>
 </svg>
