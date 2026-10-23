@@ -28,11 +28,11 @@
 
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Getting Started</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 8:30 AM</text>
+  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Office Hours</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 9:30 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="615" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Office Hours</text>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="398" height="12" rx="6"/>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Work Block</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
@@ -41,7 +41,7 @@
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">23</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">24</text>
   <text class="mut" x="552" y="494" font-size="22">left · 0 done</text>
   <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
@@ -62,8 +62,8 @@
     <text class="mut" x="500" y="790">review open (your move)</text>
   </g>
 
-  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 8:03 AM · no change · nothing failed</text>
+  <text class="warn" x="44" y="872" font-size="18">⚠ 12 routines left from Getting Started</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 9:03 AM · 1 PERRLA review now needs you · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -76,8 +76,8 @@
     <line x1="980" y1="567" x2="1760" y2="567"/><line x1="980" y1="716" x2="1760" y2="716"/><line x1="980" y1="865" x2="1760" y2="865"/>
   </g>
   <g font-size="18">
-    <rect class="rout blk" data-end="510" x="990" y="95" width="770" height="149" rx="10"/>
-    <text class="mut blkl" data-end="510" x="1012" y="163">5:30 – 8:30 · Getting Started</text>
+    <rect class="rout blk past" data-end="510" x="990" y="95" width="770" height="149" rx="10"/>
+    <text class="mut blkl past" data-end="510" x="1012" y="163">5:30 – 8:30 · Getting Started</text>
     <rect class="rout blk" data-end="570" x="990" y="244" width="770" height="50" rx="10"/>
     <text class="mut blkl" data-end="570" x="1012" y="269">8:30 – 9:30 · Office Hours</text>
     <rect class="work blk" data-end="780" x="990" y="294" width="770" height="174" rx="10"/>
@@ -93,6 +93,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="846">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="222" x2="1760" y2="222" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="209" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="272" x2="1760" y2="272" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="259" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
