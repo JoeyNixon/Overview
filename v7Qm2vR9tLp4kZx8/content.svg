@@ -31,20 +31,20 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Open</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 1:00 PM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="6" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="187" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Lunch</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">3</text>
   <text class="mut" x="132" y="494" font-size="22">to file</text>
-  <text class="mut" x="132" y="522" font-size="18">oldest ~22 hr</text>
+  <text class="mut" x="132" y="522" font-size="18">oldest ~23 hr</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">11</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">7</text>
   <text class="mut" x="552" y="494" font-size="22">left · 0 done</text>
-  <text class="mut" x="552" y="522" font-size="18">14 overdue</text>
+  <text class="mut" x="552" y="522" font-size="18">13 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 6 done</text>
@@ -64,7 +64,7 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 11 routines left from Getting Started</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 9:02 AM · 2 PERRLA reviews opened · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 10:02 AM · nothing changed · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
