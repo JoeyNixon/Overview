@@ -36,11 +36,11 @@
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="152" y="604" font-size="30">to file</text>
-  <text class="mut" x="152" y="640" font-size="26">oldest ~17 hr</text>
+  <text class="mut" x="152" y="640" font-size="26">oldest ~18 hr</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">0</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">9</text>
   <text class="mut" x="622" y="604" font-size="30">left · 0 done</text>
   <text class="mut" x="622" y="640" font-size="26">14 overdue</text>
 
@@ -87,5 +87,5 @@
   <line id="nowline" class="now" x1="150" y1="1077" x2="960" y2="1077" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1064" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 4:02 AM · rolled to Saturday; 14 items now overdue (unmoved dates) · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 5:05 AM · 9 PERRLA projects re-dated to today · nothing failed</text>
 </svg>
