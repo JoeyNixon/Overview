@@ -29,18 +29,18 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Open</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 1:00 PM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="212" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="438" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Lunch</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="152" y="604" font-size="30">to file</text>
-  <text class="mut" x="152" y="640" font-size="26">oldest ~47 hr</text>
+  <text class="mut" x="152" y="640" font-size="26">oldest ~48 hr</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">7</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">8</text>
   <text class="mut" x="622" y="604" font-size="30">left · 0 done</text>
   <text class="mut" x="622" y="640" font-size="26">11 overdue</text>
 
@@ -78,8 +78,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1699" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1771" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1284.0" x2="960" y2="1284.0" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1272.0" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1333.1" x2="960" y2="1333.1" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1321.1" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 10:00 AM · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 11:04 AM · nothing failed</text>
 </svg>
