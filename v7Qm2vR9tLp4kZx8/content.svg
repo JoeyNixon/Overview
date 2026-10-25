@@ -38,13 +38,13 @@
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">3</text>
   <text class="mut" x="132" y="494" font-size="22">to file</text>
-  <text class="mut" x="132" y="522" font-size="18">oldest ~41 hr</text>
+  <text class="mut" x="132" y="522" font-size="18">oldest ~42 hr</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">7</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">11</text>
   <text class="mut" x="552" y="494" font-size="22">left · 0 done</text>
-  <text class="mut" x="552" y="522" font-size="18">13 overdue</text>
+  <text class="mut" x="552" y="522" font-size="18">14 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="250" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 6 done</text>
@@ -64,7 +64,7 @@
   </g>
 
   <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 4:08 AM · day rolled to Sunday · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 5:05 AM · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
