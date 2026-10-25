@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1920" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date": "2026-10-24", "y6": 1100, "pxh": 46, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Open", "start": 540, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Open", "start": 825, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
+  <metadata id="live">{"date": "2026-10-25", "y6": 1100, "pxh": 46, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Open", "start": 540, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Open", "start": 825, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
   <style>
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
@@ -18,10 +18,10 @@
   </style>
   <rect class="bg" x="0" y="0" width="1000" height="1920" rx="28"/>
 
-  <text class="txt" x="40" y="88" font-size="62" font-weight="700">Saturday, October 24</text>
+  <text class="txt" x="40" y="88" font-size="62" font-weight="700">Sunday, October 25</text>
 
   <rect class="heroSoft" x="40" y="116" width="920" height="72" rx="18"/>
-  <text class="hero" x="66" y="166" font-size="40" font-weight="800">55</text>
+  <text class="hero" x="66" y="166" font-size="40" font-weight="800">54</text>
   <text class="txt" x="132" y="162" font-size="30" font-weight="600">days to Christmas break</text>
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
@@ -36,7 +36,7 @@
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="152" y="604" font-size="30">to file</text>
-  <text class="mut" x="152" y="640" font-size="26">oldest ~40 hr</text>
+  <text class="mut" x="152" y="640" font-size="26">oldest ~41 hr</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
@@ -61,7 +61,7 @@
     <text class="mut" x="520" y="890">review open (your move)</text>
   </g>
 
-  <text class="warn" x="40" y="966" font-size="26">⚠ 3 routines left from Getting Started · 4 goals open</text>
+  <text class="ok" x="40" y="966" font-size="26">✓ Nothing behind today</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -76,16 +76,16 @@
     <rect class="rout blk" data-end="540" x="160" y="1077" width="800" height="161" rx="12"/>
     <text class="mut blkl" data-end="540" x="184" y="1162" font-size="20">5:30 – 9:00 · Getting Started</text>
     <rect class="open blk" data-end="780" x="160" y="1238" width="800" height="184" rx="12"/>
-    <text class="mut blkl" data-end="780" x="184" y="1335" font-size="20">9:00 – 1:00 · Open</text>
+    <text class="mut blkl" data-end="780" x="184" y="1335" font-size="20">9:00 – 1:00 · Open (incl. Church 10–12)</text>
     <rect class="rout blk" data-end="825" x="160" y="1422" width="800" height="35" rx="12"/>
     <text class="mut blkl" data-end="825" x="184" y="1443" font-size="20">1:00 – 1:45 · Lunch</text>
     <rect class="open blk" data-end="1140" x="160" y="1457" width="800" height="242" rx="12"/>
-    <text class="mut blkl" data-end="1140" x="184" y="1583" font-size="20">1:45 – 7:00 · Open (incl. Trunk or Treat 5–6)</text>
+    <text class="mut blkl" data-end="1140" x="184" y="1583" font-size="20">1:45 – 7:00 · Open</text>
     <rect class="home blk" data-end="1320" x="160" y="1699" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1771" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
   <line id="nowline" class="now" x1="150" y1="1837.0" x2="960" y2="1837.0" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1825.0" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 2:59 AM · no changes · nothing failed</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 4:08 AM · day rolled to Sunday · nothing failed</text>
 </svg>
