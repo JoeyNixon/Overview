@@ -31,14 +31,14 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Evening</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 10:00 PM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="298" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="503" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: last block of the day</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="due" x="72" y="516" font-size="56" font-weight="800">5</text>
   <text class="mut" x="152" y="494" font-size="22">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">about 24hr old</text>
+  <text class="mut" x="152" y="522" font-size="18">about 25hr old</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
@@ -58,7 +58,7 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 8:14 PM · 1 PERRLA project synced (Turabian page ranges) · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 9:05 PM · 1 PERRLA project synced (free-tier) · nothing failed</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -92,6 +92,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="846">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="827" x2="1760" y2="827" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="815" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="870" x2="1760" y2="870" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="858" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
