@@ -28,37 +28,38 @@
 
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Evening</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 10:00 PM</text>
+  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Night</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 5:30 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="490.7" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: last block of the day</text>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="0" height="12" rx="6"/>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
-  <text class="due" x="72" y="516" font-size="56" font-weight="800">15</text>
-  <text class="mut" x="192" y="494" font-size="22">to file</text>
-  <text class="mut" x="192" y="522" font-size="18">~24h old</text>
+  <text class="ok" x="72" y="516" font-size="56" font-weight="800">0</text>
+  <text class="ok" x="192" y="494" font-size="22">clear</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">16</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">0</text>
   <text class="mut" x="552" y="494" font-size="22">left · 5 done</text>
   <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 3 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 4 done</text>
   <g font-size="17">
-    <text class="txt" x="72" y="640" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="500" y="640">Next: new build on PERRLA-Migration-Tool, run the PDF on test server</text>
-    <text class="txt" x="72" y="670" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
-    <text class="mut" x="500" y="670">Next: read AIMA 19.4 to 19.7</text>
-    <text class="txt" x="72" y="700" font-weight="600">MSAI 531 · Week 2 · Test 1: gradient descent issues</text>
-    <text class="mut" x="500" y="700">Next: practice test (2026-10-27)</text>
+    <text class="txt" x="72" y="638" font-weight="600">SQL Server Schema Consolidation</text>
+    <text class="mut" x="500" y="638">Next: new build on PERRLA-Migration-Tool, run the PDF on test server</text>
+    <text class="txt" x="72" y="664" font-weight="600">Wheeler logging access over unimproved street</text>
+    <text class="mut" x="500" y="664">Next: send Richard the options email</text>
+    <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
+    <text class="mut" x="500" y="690">Next: read AIMA 19.4 to 19.7</text>
+    <text class="txt" x="72" y="716" font-weight="600">MSAI 531 · Week 2 · Test 1: gradient descent issues</text>
+    <text class="mut" x="500" y="716">Next: practice test (2026-10-27)</text>
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 9:02 PM · nothing changed this hour</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 10:02 PM · Nightly Review harvested · Inbox cleared</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -89,9 +90,9 @@
     <text class="mut blkl past" data-end="1080" x="1012" y="684">4:30 – 6:00 · Home</text>
     <rect class="mtg blk past" data-end="1140" x="990" y="716" width="770" height="50" rx="10"/>
     <text class="mut blkl past" data-end="1140" x="1012" y="744">6:00 – 7:00 · Meeting</text>
-    <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
-    <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
+    <rect class="home blk past" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
+    <text class="mut blkl past" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="867.2" x2="1760" y2="867.2" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="855.2" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="915" x2="1760" y2="915" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="903" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
