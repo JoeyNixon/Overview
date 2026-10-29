@@ -26,11 +26,11 @@
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
   <text class="n3" x="76" y="256" font-size="24" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Getting Started</text>
-  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 9:00 AM</text>
+  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Meeting</text>
+  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 10:00 AM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="654" height="16" rx="8"/>
-  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Meeting</text>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="247" height="16" rx="8"/>
+  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Work Block</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
@@ -56,7 +56,7 @@
     <text class="mut" x="520" y="834">Next: practice test (2026-10-27)</text>
   </g>
 
-  <text class="ok" x="40" y="908" font-size="26">✓ Nothing behind today</text>
+  <text class="warn" x="40" y="908" font-size="26">⚠ 12 routines left from Getting Started</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -93,8 +93,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1698" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1775" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1201" x2="960" y2="1201" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1189" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1251" x2="960" y2="1251" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1239" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 8:12 AM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 9:17 AM</text>
 </svg>
