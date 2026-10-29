@@ -31,7 +31,7 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Getting Started</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 9:00 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="114" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="324" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Meeting</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
@@ -58,8 +58,8 @@
     <text class="mut" x="500" y="716">Next: practice test (2026-10-27)</text>
   </g>
 
-  <text class="warn" x="44" y="872" font-size="18">⚠ 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 6:03 AM · no change since the roll</text>
+  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 7:04 AM · warn line corrected (was stale)</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -97,6 +97,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="122" x2="1760" y2="122" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="110" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="173" x2="1760" y2="173" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="161" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
