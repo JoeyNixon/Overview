@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date": "2026-10-28", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Work Block", "start": 540, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Work Block", "start": 825, "end": 900}, {"name": "Office Hours", "start": 900, "end": 930}, {"name": "Wrap Up", "start": 930, "end": 990}, {"name": "Meeting", "start": 930, "end": 990}, {"name": "Home", "start": 990, "end": 1080}, {"name": "Meeting", "start": 1080, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
+  <metadata id="live">{"date": "2026-10-29", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Meeting", "start": 540, "end": 600}, {"name": "Work Block", "start": 600, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Work Block", "start": 825, "end": 900}, {"name": "Office Hours", "start": 900, "end": 930}, {"name": "Wrap Up", "start": 930, "end": 990}, {"name": "Home", "start": 990, "end": 1080}, {"name": "Planning Meeting", "start": 1020, "end": 1080}, {"name": "Meeting", "start": 1035, "end": 1095}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
   <style>
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
@@ -19,10 +19,10 @@
   <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
 
   <!-- left column -->
-  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Wednesday, October 28</text>
+  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Thursday, October 29</text>
 
   <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
-  <text class="hero" x="66" y="146" font-size="30" font-weight="800">51</text>
+  <text class="hero" x="66" y="146" font-size="30" font-weight="800">50</text>
   <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
   <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
 
@@ -41,15 +41,15 @@
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">1</text>
-  <text class="mut" x="552" y="494" font-size="22">left · 6 done</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">22</text>
+  <text class="mut" x="552" y="494" font-size="22">left · 1 done</text>
   <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 4 done</text>
   <g font-size="17">
     <text class="txt" x="72" y="638" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="500" y="638">Next: new build on PERRLA-Migration-Tool, run the PDF on test server</text>
+    <text class="mut" x="500" y="638">Next: new build on PERRLA-Migration-Tool, run the PDF on the test server</text>
     <text class="txt" x="72" y="664" font-weight="600">Wheeler logging access over unimproved street</text>
     <text class="mut" x="500" y="664">Next: send Richard the options email</text>
     <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
@@ -59,7 +59,7 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 3:07 AM · 2 PERRLA projects dated today</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 4:10 AM · day rolled to Thursday · 2 PERRLA projects dated today</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -72,27 +72,31 @@
     <line x1="980" y1="567" x2="1760" y2="567"/><line x1="980" y1="716" x2="1760" y2="716"/><line x1="980" y1="865" x2="1760" y2="865"/>
   </g>
   <g font-size="18">
-    <rect class="rout blk past" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
-    <text class="mut blkl past" data-end="540" x="1012" y="193">5:30 – 9:00 · Getting Started</text>
-    <rect class="work blk past" data-end="780" x="990" y="269" width="770" height="199" rx="10"/>
-    <text class="mut blkl past" data-end="780" x="1012" y="380">9:00 – 1:00 · Work Block</text>
-    <rect class="rout blk past" data-end="825" x="990" y="468" width="770" height="37" rx="10"/>
-    <text class="mut blkl past" data-end="825" x="1012" y="489">1:00 – 1:45 · Lunch</text>
-    <rect class="work blk past" data-end="900" x="990" y="505" width="770" height="62" rx="10"/>
-    <text class="mut blkl past" data-end="900" x="1012" y="540">1:45 – 3:00 · Work Block</text>
-    <rect class="rout blk past" data-end="930" x="990" y="567" width="770" height="25" rx="10"/>
-    <text class="mut blkl past" data-end="930" x="1012" y="583">3:00 – 3:30 · Office Hours</text>
-    <rect class="rout blk past" data-end="990" x="990" y="592" width="380" height="50" rx="10"/>
-    <text class="mut blkl past" data-end="990" x="1008" y="620" font-size="15">3:30 – 4:30 · Wrap Up</text>
-    <rect class="mtg blk past" data-end="990" x="1380" y="592" width="380" height="50" rx="10"/>
-    <text class="mut blkl past" data-end="990" x="1398" y="620" font-size="15">3:30 – 4:30 · Meeting</text>
-    <rect class="home blk past" data-end="1080" x="990" y="642" width="770" height="75" rx="10"/>
-    <text class="mut blkl past" data-end="1080" x="1012" y="684">4:30 – 6:00 · Home</text>
-    <rect class="mtg blk past" data-end="1140" x="990" y="716" width="770" height="50" rx="10"/>
-    <text class="mut blkl past" data-end="1140" x="1012" y="744">6:00 – 7:00 · Meeting</text>
-    <rect class="home blk past" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
-    <text class="mut blkl past" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
+    <rect class="rout blk" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
+    <text class="mut blkl" data-end="540" x="1012" y="193">5:30 – 9:00 · Getting Started</text>
+    <rect class="mtg blk" data-end="600" x="990" y="269" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="600" x="1012" y="297">9:00 – 10:00 · Meeting</text>
+    <rect class="work blk" data-end="780" x="990" y="319" width="770" height="149" rx="10"/>
+    <text class="mut blkl" data-end="780" x="1012" y="402">10:00 – 1:00 · Work Block</text>
+    <rect class="rout blk" data-end="825" x="990" y="468" width="770" height="37" rx="10"/>
+    <text class="mut blkl" data-end="825" x="1012" y="489">1:00 – 1:45 · Lunch</text>
+    <rect class="work blk" data-end="900" x="990" y="505" width="770" height="62" rx="10"/>
+    <text class="mut blkl" data-end="900" x="1012" y="540">1:45 – 3:00 · Work Block</text>
+    <rect class="rout blk" data-end="930" x="990" y="567" width="770" height="25" rx="10"/>
+    <text class="mut blkl" data-end="930" x="1012" y="581">3:00 – 3:30 · Office Hours</text>
+    <rect class="rout blk" data-end="990" x="990" y="592" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="990" x="1012" y="620">3:30 – 4:30 · Wrap Up</text>
+    <rect class="home blk" data-end="1080" x="990" y="642" width="770" height="75" rx="10"/>
+    <text class="mut blkl" data-end="1080" x="1012" y="684">4:30 – 6:00 · Home</text>
+    <rect class="rout blk" data-end="1080" x="990" y="667" width="380" height="50" rx="10"/>
+    <text class="mut blkl" data-end="1080" x="1008" y="695" font-size="15">5:00 – 6:00 · Planning Meeting</text>
+    <rect class="mtg blk" data-end="1095" x="1380" y="679" width="380" height="50" rx="10"/>
+    <text class="mut blkl" data-end="1095" x="1398" y="707" font-size="15">5:15 – 6:15 · Meeting</text>
+    <rect class="open blk" data-end="1140" x="990" y="729" width="770" height="37" rx="10"/>
+    <text class="mut blkl" data-end="1140" x="1012" y="750">6:15 – 7:00 · Open</text>
+    <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
+    <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="915" x2="1760" y2="915" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="903" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="95" x2="1760" y2="95" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="83" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
