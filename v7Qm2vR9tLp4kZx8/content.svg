@@ -48,7 +48,7 @@
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
   <g font-size="17">
     <text class="txt" x="72" y="638" font-weight="600">PERRLA MCP</text>
-    <text class="mut" x="500" y="638">Next: your ok to push URL-rule fix, then critic/sign-off/merge/release</text>
+    <text class="mut" x="500" y="638">Next: your call - fix hosted URL fetch before prod, or ship with URLs not working?</text>
     <text class="txt" x="72" y="664" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="500" y="664">Next: rehearsal on prod copies (week of Oct 26)</text>
     <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Assignment 2: optimization</text>
@@ -60,7 +60,7 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 2 routines left from Office Hours, Evening · 5 goals open</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 10:14 PM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 11:08 PM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
