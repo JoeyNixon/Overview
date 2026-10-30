@@ -30,7 +30,7 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Work Block</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 11:15 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="0" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="343" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Drive to Cookeville</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
@@ -41,14 +41,14 @@
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="472" y="516" font-size="76" font-weight="800">19</text>
-  <text class="mut" x="552" y="494" font-size="22">left · 2 done</text>
+  <text class="mut" x="552" y="494" font-size="22">left · 3 done</text>
   <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 5 done</text>
   <g font-size="17">
     <text class="txt" x="72" y="638" font-weight="600">PERRLA MCP</text>
-    <text class="mut" x="500" y="638">Next: your call - fix hosted URL fetch before prod, or ship with URLs not working?</text>
+    <text class="mut" x="500" y="638">Done - open question to you (Graysen): fix hosted URL fetch before prod, or ship as-is?</text>
     <text class="txt" x="72" y="664" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="500" y="664">Next: rehearsal on prod copies (week of Oct 26)</text>
     <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Assignment 2: optimization</text>
@@ -59,8 +59,8 @@
     <text class="mut" x="500" y="742">Next: practice test (2026-10-27)</text>
   </g>
 
-  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 9:00 AM</text>
+  <text class="warn" x="44" y="872" font-size="18">⚠ 1 routine left from Getting Started</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 10:04 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -94,6 +94,6 @@
     <rect class="mtg blk" data-end="885" x="1380" y="381" width="380" height="174" rx="10"/>
     <text class="mut blkl" data-end="885" x="1398" y="409" font-size="15">11:15 – 2:45 · Meeting</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="269" x2="1760" y2="269" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="257" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="322" x2="1760" y2="322" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="310" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
