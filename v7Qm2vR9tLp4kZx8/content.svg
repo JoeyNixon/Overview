@@ -30,7 +30,7 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Night</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 5:30 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="595" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="684" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
@@ -60,7 +60,7 @@
   </g>
 
   <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 4:10 AM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 5:05 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
