@@ -30,7 +30,7 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Getting Started</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 9:00 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="107" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="328" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Work Block</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
@@ -60,7 +60,7 @@
   </g>
 
   <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 6:01 AM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 7:05 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -94,6 +94,6 @@
     <rect class="mtg blk" data-end="885" x="1380" y="381" width="380" height="174" rx="10"/>
     <text class="mut blkl" data-end="885" x="1398" y="409" font-size="15">11:15 – 2:45 · Meeting</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="121" x2="1760" y2="121" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="109" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="174" x2="1760" y2="174" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="162" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
