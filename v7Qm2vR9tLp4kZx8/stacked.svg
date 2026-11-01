@@ -35,13 +35,13 @@
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="192" y="604" font-size="30">to file</text>
-  <text class="mut" x="192" y="640" font-size="26">oldest ~31h</text>
+  <text class="mut" x="192" y="640" font-size="26">oldest ~32h</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="546" y="636" font-size="100" font-weight="800">5</text>
   <text class="mut" x="622" y="604" font-size="30">left · 3 done</text>
-  <text class="mut" x="622" y="640" font-size="26">18 overdue</text>
+  <text class="mut" x="622" y="640" font-size="26">16 overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="174" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 3 of 5 done</text>
@@ -85,5 +85,5 @@
   <line id="nowline" class="now" x1="150" y1="1836" x2="960" y2="1836" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1824" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 12:01 AM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 1:03 AM</text>
 </svg>
