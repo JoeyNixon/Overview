@@ -27,17 +27,17 @@
 
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Church</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 12:00 PM</text>
+  <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Church Conference</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 1:00 PM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="398" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Church Conference</text>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="121" height="12" rx="6"/>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Lunch</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">3</text>
   <text class="mut" x="192" y="494" font-size="22">to file</text>
-  <text class="mut" x="192" y="522" font-size="18">oldest ~43h</text>
+  <text class="mut" x="192" y="522" font-size="18">oldest ~44h</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
@@ -61,8 +61,8 @@
   </g>
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 8 routines left from Getting Started</text>
-  <text class="mut" x="44" y="912" font-size="16">1 PERRLA project synced (review, your move) · Inbox oldest ~42h → ~43h · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 11:06 AM</text>
+  <text class="mut" x="44" y="912" font-size="16">Nothing changed this run · Inbox oldest ~43h → ~44h · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 12:10 PM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -90,6 +90,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="373" x2="1760" y2="373" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="361" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="426" x2="1760" y2="426" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="414" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
