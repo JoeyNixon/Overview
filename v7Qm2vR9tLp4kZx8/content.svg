@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date": "2026-10-31", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Open", "start": 540, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Home", "start": 825, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
+  <metadata id="live">{"date": "2026-11-01", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Open", "start": 540, "end": 600}, {"name": "Church", "start": 600, "end": 720}, {"name": "Church Conference", "start": 720, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Home", "start": 825, "end": 1140}, {"name": "Evening", "start": 1140, "end": 1320}]}</metadata>
   <style>
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
@@ -18,10 +18,10 @@
   <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
 
   <!-- left column -->
-  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Saturday, October 31</text>
+  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Sunday, November 1</text>
 
   <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
-  <text class="hero" x="66" y="146" font-size="30" font-weight="800">48</text>
+  <text class="hero" x="66" y="146" font-size="30" font-weight="800">47</text>
   <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
   <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
 
@@ -37,32 +37,32 @@
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">3</text>
   <text class="mut" x="192" y="494" font-size="22">to file</text>
-  <text class="mut" x="192" y="522" font-size="18">oldest ~35h</text>
+  <text class="mut" x="192" y="522" font-size="18">oldest ~36h</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="472" y="516" font-size="76" font-weight="800">5</text>
-  <text class="mut" x="552" y="494" font-size="22">left · 3 done</text>
-  <text class="mut" x="552" y="522" font-size="18">16 overdue</text>
+  <text class="mut" x="552" y="494" font-size="22">left · 0 done</text>
+  <text class="mut" x="552" y="522" font-size="18">18 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 3 of 5 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
   <g font-size="17">
     <text class="txt" x="72" y="638" font-weight="600">PERRLA MCP</text>
-    <text class="mut" x="500" y="638">Done - open question to you (Graysen): fix hosted URL fetch before prod, or ship as-is?</text>
+    <text class="mut" x="500" y="638">Open question to you (Graysen): fix hosted URL fetch before prod, or ship as-is?</text>
     <text class="txt" x="72" y="664" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="500" y="664">Next: full timed load running over the weekend (migration-tool-6 rehearsal)</text>
     <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Assignment 2: optimization</text>
-    <text class="mut" x="500" y="690">Done.</text>
+    <text class="mut" x="500" y="690">Next: set up and calculate Assignment 2; turn it in</text>
     <text class="txt" x="72" y="716" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
     <text class="mut" x="500" y="716">Next: read AIMA 19.4 to 19.7</text>
     <text class="txt" x="72" y="742" font-weight="600">MSAI 531 · Week 2 · Test 1: gradient descent issues</text>
-    <text class="mut" x="500" y="742">Done.</text>
+    <text class="mut" x="500" y="742">Not started</text>
   </g>
 
-  <text class="warn" x="44" y="872" font-size="18">⚠ 34 routines left from Getting Started, Lunch, Home, Evening · 5 goals open</text>
-  <text class="mut" x="44" y="912" font-size="16">Nothing changed since last run · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 3:00 AM</text>
+  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
+  <text class="mut" x="44" y="912" font-size="16">Day rolled to Sunday · 3 PERRLA dates refreshed · 1 new event found overnight · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 4:11 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -77,8 +77,12 @@
   <g font-size="18">
     <rect class="rout blk" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
     <text class="mut blkl" data-end="540" x="1012" y="193">5:30 – 9:00 · Getting Started</text>
-    <rect class="open blk" data-end="780" x="990" y="269" width="770" height="199" rx="10"/>
-    <text class="mut blkl" data-end="780" x="1012" y="297">9:00 – 1:00 · Open</text>
+    <rect class="open blk" data-end="600" x="990" y="269" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="600" x="1012" y="297">9:00 – 10:00 · Open</text>
+    <rect class="mtg blk" data-end="720" x="990" y="319" width="770" height="99" rx="10"/>
+    <text class="mut blkl" data-end="720" x="1012" y="367">10:00 – 12:00 · Church</text>
+    <rect class="mtg blk" data-end="780" x="990" y="418" width="770" height="50" rx="10"/>
+    <text class="mut blkl" data-end="780" x="1012" y="446">12:00 – 1:00 · Church Conference</text>
     <rect class="rout blk" data-end="825" x="990" y="468" width="770" height="37" rx="10"/>
     <text class="mut blkl" data-end="825" x="1012" y="489">1:00 – 1:45 · Lunch</text>
     <rect class="home blk" data-end="1140" x="990" y="505" width="770" height="261" rx="10"/>
@@ -86,6 +90,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="915" x2="1760" y2="915" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="903" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="70" x2="1760" y2="70" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="58" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
