@@ -35,31 +35,31 @@
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">3</text>
   <text class="mut" x="192" y="604" font-size="30">to file</text>
-  <text class="mut" x="192" y="640" font-size="26">oldest ~36h</text>
+  <text class="mut" x="192" y="640" font-size="26">oldest ~37h</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="546" y="636" font-size="100" font-weight="800">5</text>
-  <text class="mut" x="622" y="604" font-size="30">left · 0 done</text>
+  <text class="mut" x="622" y="604" font-size="30">left · 3 done</text>
   <text class="mut" x="622" y="640" font-size="26">18 overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="174" rx="28" stroke-width="2"/>
-  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
+  <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 3 of 5 done</text>
   <g font-size="18">
     <text class="txt" x="76" y="768" font-weight="600">PERRLA MCP</text>
-    <text class="mut" x="520" y="768">Open question to you (Graysen): fix hosted URL fetch before prod, or ship as-is?</text>
+    <text class="mut" x="520" y="768">Done</text>
     <text class="txt" x="76" y="790" font-weight="600">SQL Server Schema Consolidation</text>
     <text class="mut" x="520" y="790">Next: full timed load running over the weekend (migration-tool-6 rehearsal)</text>
     <text class="txt" x="76" y="812" font-weight="600">MSAI 531 · Week 2 · Assignment 2: optimization</text>
-    <text class="mut" x="520" y="812">Next: set up and calculate Assignment 2; turn it in</text>
+    <text class="mut" x="520" y="812">Done</text>
     <text class="txt" x="76" y="834" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
     <text class="mut" x="520" y="834">Next: read AIMA 19.4 to 19.7</text>
     <text class="txt" x="76" y="856" font-weight="600">MSAI 531 · Week 2 · Test 1: gradient descent issues</text>
-    <text class="mut" x="520" y="856">Not started</text>
+    <text class="mut" x="520" y="856">Done</text>
   </g>
 
   <text class="ok" x="40" y="908" font-size="26">✓ Nothing behind today</text>
-  <text class="mut" x="40" y="946" font-size="22">Day rolled to Sunday · 3 PERRLA dates refreshed · 1 new event found overnight · nothing failed</text>
+  <text class="mut" x="40" y="946" font-size="22">3 more PERRLA dates refreshed · Priorities and Due Today recomputed · nothing failed</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -89,5 +89,5 @@
   <line id="nowline" class="now" x1="150" y1="1050" x2="960" y2="1050" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1038" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 4:11 AM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 5:00 AM</text>
 </svg>
