@@ -38,7 +38,7 @@
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">22</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">23</text>
   <text class="mut" x="622" y="604" font-size="30">left · 0 done</text>
   <text class="mut" x="622" y="640" font-size="26">1 overdue</text>
 
@@ -54,7 +54,7 @@
   </g>
 
   <text class="ok" x="40" y="908" font-size="26">✓ Nothing behind today</text>
-  <text class="mut" x="40" y="946" font-size="22">Day rolled to Monday Nov 2 · 1 PERRLA project re-dated · nothing failed</text>
+  <text class="mut" x="40" y="946" font-size="22">1 PERRLA project re-dated (stale Your-move) · nothing failed</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -92,5 +92,5 @@
   <line id="nowline" class="now" x1="150" y1="1054" x2="960" y2="1054" stroke-width="5"/>
   <text id="nowlabel" class="nowt" x="960" y="1042" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 4:09 AM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 5:07 AM</text>
 </svg>
