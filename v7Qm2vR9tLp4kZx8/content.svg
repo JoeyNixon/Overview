@@ -30,7 +30,7 @@
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Evening</text>
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 10:00 PM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="261" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="483" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
@@ -45,23 +45,19 @@
   <text class="mut" x="552" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 4 of 5 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 3 done</text>
   <g font-size="17">
-    <text class="txt" x="72" y="638" font-weight="600">PERRLA MCP</text>
-    <text class="mut" x="500" y="638">Done</text>
-    <text class="txt" x="72" y="664" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="500" y="664">Next: verify timings, build delta + parallel GenRef streams</text>
-    <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 2 · Assignment 2: optimization</text>
-    <text class="mut" x="500" y="690">Done</text>
-    <text class="txt" x="72" y="716" font-weight="600">MSAI 531 · Week 2 · Lecture and reading</text>
-    <text class="mut" x="500" y="716">Done</text>
-    <text class="txt" x="72" y="742" font-weight="600">MSAI 531 · Week 2 · Test 1: gradient descent issues</text>
-    <text class="mut" x="500" y="742">Done</text>
+    <text class="txt" x="72" y="638" font-weight="600">SQL Server Schema Consolidation</text>
+    <text class="mut" x="500" y="638">Next: verify timings, build delta + parallel GenRef streams</text>
+    <text class="txt" x="72" y="664" font-weight="600">Wheeler logging access over unimproved street</text>
+    <text class="mut" x="500" y="664">Next: send the options email (survey + parcel reports attached)</text>
+    <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 3 · Plan the week</text>
+    <text class="mut" x="500" y="690">Next: read the Week 3 Overview; list deliverables, due dates, day plan</text>
   </g>
 
   <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="912" font-size="16">2 PERRLA projects added · Inbox cleared · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 8:05 PM</text>
+  <text class="mut" x="44" y="912" font-size="16">42 Work items updated by tonight's catch-up review · 4 Inbox items filed · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 9:00 PM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -89,6 +85,6 @@
     <rect class="home blk" data-end="1320" x="990" y="766" width="770" height="149" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="850">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="820" x2="1760" y2="820" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="808" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="865" x2="1760" y2="865" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="853" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
