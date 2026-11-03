@@ -39,7 +39,7 @@
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">20</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">19</text>
   <text class="mut" x="622" y="604" font-size="30">left · 6 done</text>
   <text class="mut" x="622" y="640" font-size="26">1 overdue</text>
 
