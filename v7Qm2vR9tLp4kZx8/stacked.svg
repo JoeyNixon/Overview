@@ -25,21 +25,21 @@
 
   <rect class="n1" x="40" y="210" width="920" height="250" rx="28"/>
   <text class="n3" x="76" y="256" font-size="24" font-weight="600" letter-spacing="1">RIGHT NOW</text>
-  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Home</text>
-  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 7:00 PM</text>
+  <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Evening</text>
+  <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 10:00 PM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="582.3" height="16" rx="8"/>
-  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Evening</text>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="2.6" height="16" rx="8"/>
+  <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Getting Started</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">4</text>
   <text class="mut" x="206" y="604" font-size="30">to file</text>
-  <text class="mut" x="206" y="640" font-size="26">oldest ~5h59m</text>
+  <text class="mut" x="206" y="640" font-size="26">oldest ~6h46m</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="546" y="636" font-size="100" font-weight="800">19</text>
+  <text class="due" x="546" y="636" font-size="100" font-weight="800">20</text>
   <text class="mut" x="622" y="604" font-size="30">left · 5 done</text>
   <text class="mut" x="622" y="640" font-size="26">1 overdue</text>
 
@@ -47,15 +47,15 @@
   <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 3 done</text>
   <g font-size="18">
     <text class="txt" x="76" y="768" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="520" y="768">Next: delta (Change Tracking) + parallel GenRef streams, fast verify, runbook v2</text>
+    <text class="mut" x="520" y="768">Next: rehearsal passed (62/62 verified); delta + parallel GenRef streams, runbook v2</text>
     <text class="txt" x="76" y="790" font-weight="600">Wheeler logging access over unimproved street</text>
     <text class="mut" x="520" y="790">Next: send the options email (survey + parcel reports attached)</text>
     <text class="txt" x="76" y="812" font-weight="600">MSAI 531 · Week 3 · Plan the week</text>
     <text class="mut" x="520" y="812">Next: read the Week 3 Overview; list deliverables, due dates, day plan</text>
   </g>
 
-  <text class="warn" x="40" y="908" font-size="26">⚠ 5 routines left from Work Block, Lunch &amp; Wrap Up · 5 Goals unchecked past 6 PM</text>
-  <text class="mut" x="40" y="946" font-size="22">3 PERRLA projects synced · nothing failed</text>
+  <text class="warn" x="40" y="908" font-size="26">⚠ 10 routines left from Work Block, Lunch, Wrap Up &amp; Home · 5 Goals unchecked past 6 PM</text>
+  <text class="mut" x="40" y="946" font-size="22">1 PERRLA project synced · nothing failed</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -90,8 +90,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1699" width="800" height="138" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1776" font-size="20">7:00 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1662.0" x2="960" y2="1662.0" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1650.0" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1698.4" x2="960" y2="1698.4" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1686.4" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 6:13 PM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 7:00 PM</text>
 </svg>
