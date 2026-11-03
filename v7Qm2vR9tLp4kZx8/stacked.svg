@@ -28,34 +28,34 @@
   <text id="rn-title" class="n2" x="76" y="314" font-size="52" font-weight="700">Work Block AM</text>
   <text id="rn-left" class="n3" x="76" y="362" font-size="30">until 1:00 PM</text>
   <rect id="rn-barbg" x="76" y="380" width="848" height="16" rx="8" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="76" y="380" width="53.0" height="16" rx="8"/>
+  <rect id="rn-bar" class="n3" x="76" y="380" width="226.1" height="16" rx="8"/>
   <text id="rn-next" class="n2" x="76" y="436" font-size="28">Next: Lunch</text>
 
   <rect class="card" x="40" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="530" font-size="24" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="76" y="636" font-size="76" font-weight="800">1</text>
   <text class="mut" x="206" y="608" font-size="26">to file</text>
-  <text class="mut" x="206" y="640" font-size="20">oldest ~50 min</text>
+  <text class="mut" x="206" y="640" font-size="20">oldest ~1h 40m</text>
 
   <rect class="card" x="510" y="482" width="450" height="200" rx="28" stroke-width="2"/>
   <text class="mut" x="546" y="530" font-size="24" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="546" y="636" font-size="100" font-weight="800">26</text>
-  <text class="mut" x="672" y="604" font-size="28">left · 1 done</text>
+  <text class="mut" x="672" y="604" font-size="28">left · 4 done</text>
   <text class="mut" x="672" y="640" font-size="24">1 overdue</text>
 
   <rect class="card" x="40" y="704" width="920" height="174" rx="28" stroke-width="2"/>
   <text class="mut" x="76" y="744" font-size="22" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 3 done</text>
   <g font-size="18">
     <text class="txt" x="76" y="768" font-weight="600">SQL Server Schema Consolidation</text>
-    <text class="mut" x="520" y="768">Next: delta built, local proof passed; parallel GenRef streams, restore command next</text>
+    <text class="mut" x="520" y="768">Next: runbook 2.0 ready, rehearsal 2 passes locally; new build, rehearsal 2 on TEST-1</text>
     <text class="txt" x="76" y="790" font-weight="600">Wheeler logging access over unimproved street</text>
     <text class="mut" x="520" y="790">Next: send the options email (survey + parcel reports attached)</text>
     <text class="txt" x="76" y="812" font-weight="600">MSAI 531 · Week 3 · Project 2: XOR network</text>
     <text class="mut" x="520" y="812">Next: build the XOR network by hand and check it against the truth table</text>
   </g>
 
-  <text class="warn" x="40" y="908" font-size="26">⚠ 1 routine left from Getting Started</text>
-  <text class="mut" x="40" y="946" font-size="22">3 PERRLA items synced · 1 email arrived · nothing failed</text>
+  <text class="ok" x="40" y="908" font-size="26">✓ Nothing behind today</text>
+  <text class="mut" x="40" y="946" font-size="22">7 PERRLA items synced · nothing failed</text>
 
   <text class="txt" x="40" y="1050" font-size="42" font-weight="700">Today's shape</text>
   <g class="mut" font-size="28">
@@ -82,8 +82,8 @@
     <rect class="home blk" data-end="1320" x="160" y="1583" width="800" height="253" rx="12"/>
     <text class="mut blkl" data-end="1320" x="184" y="1611" font-size="20">4:30 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="150" y1="1249.5" x2="960" y2="1249.5" stroke-width="5"/>
-  <text id="nowlabel" class="nowt" x="960" y="1237.5" font-size="28" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="150" y1="1287.07" x2="960" y2="1287.07" stroke-width="5"/>
+  <text id="nowlabel" class="nowt" x="960" y="1275.07" font-size="28" font-weight="700" text-anchor="end">now</text>
 
-  <text class="mut" x="40" y="1896" font-size="26">updated 9:15 AM</text>
+  <text class="mut" x="40" y="1896" font-size="26">updated 10:04 AM</text>
 </svg>
