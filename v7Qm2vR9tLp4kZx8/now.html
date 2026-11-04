@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Right now</title>
+<style>
+  :root { --card:#CFE8E2; --title:#04342C; --accent:#0F6E56; --track:rgba(255,255,255,0.65); }
+  @media (prefers-color-scheme: dark) {
+    :root { --card:#1F4D44; --title:#E1F5EE; --accent:#9FE1CB; --track:rgba(255,255,255,0.15); }
+  }
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .card { background: var(--card); border-radius: 16px; padding: 16px 22px 18px; box-sizing: border-box; }
+  .label { color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+  .title { color: var(--title); font-size: 30px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.15; margin-top: 2px; }
+  .left { color: var(--accent); font-size: 16px; margin-top: 4px; }
+  .track { background: var(--track); height: 10px; border-radius: 5px; margin-top: 8px; overflow: hidden; }
+  .bar { background: var(--accent); height: 100%; width: 0; border-radius: 5px; transition: width 0.6s ease; }
+  .next { color: var(--title); font-size: 15px; margin-top: 10px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">RIGHT NOW</div>
+  <div id="title" class="title">…</div>
+  <div id="left" class="left"></div>
+  <div id="track" class="track"><div id="bar" class="bar"></div></div>
+  <div id="next" class="next"></div>
+</div>
+<script>
+  // Reads the day's blocks from the Overview graphic's metadata (content.svg, redrawn by the hourly)
+  // and keeps the card live. No data of its own.
+  let blocks = [];
+  function fmt(min) {
+    const h = Math.floor(min / 60), m = min % 60, h12 = ((h + 11) % 12) + 1;
+    return h12 + ":" + String(m).padStart(2, "0");
+  }
+  function dur(min) {
+    if (min < 60) return min + (min === 1 ? " minute" : " minutes");
+    const h = Math.floor(min / 60), m = min % 60;
+    return h + " hr" + (m ? " " + m + " min" : "");
+  }
+  function render() {
+    const t = new Date(), now = t.getHours() * 60 + t.getMinutes();
+    const cur = blocks.find(b => now >= b.start && now < b.end);
+    const next = blocks.find(b => b.start > now);
+    const title = document.getElementById("title"), left = document.getElementById("left");
+    const track = document.getElementById("track"), bar = document.getElementById("bar"), nx = document.getElementById("next");
+    if (cur) {
+      title.textContent = cur.name;
+      left.textContent = dur(cur.end - now) + " left · ends " + fmt(cur.end);
+      bar.style.width = Math.max(2, 100 * (now - cur.start) / (cur.end - cur.start)).toFixed(1) + "%";
+      track.classList.remove("hidden");
+    } else if (next) {
+      title.textContent = "Open";
+      left.textContent = "until " + fmt(next.start);
+      track.classList.add("hidden");
+    } else {
+      title.textContent = "Done for the day";
+      left.textContent = "nothing else scheduled";
+      track.classList.add("hidden");
+    }
+    nx.textContent = next ? "Next: " + next.name + " at " + fmt(next.start) : "";
+    nx.classList.toggle("hidden", !next);
+  }
+  async function load() {
+    try {
+      const r = await fetch("content.svg?t=" + Date.now(), { cache: "no-store" });
+      if (!r.ok) return;
+      const doc = new DOMParser().parseFromString(await r.text(), "image/svg+xml");
+      const meta = doc.getElementById("live");
+      if (meta) blocks = (JSON.parse(meta.textContent).blocks || []);
+      render();
+    } catch (e) { /* keep showing the last good card */ }
+  }
+  load();
+  setInterval(load, 120000);
+  setInterval(render, 15000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+</script>
+</body>
+</html>
