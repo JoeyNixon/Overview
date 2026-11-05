@@ -41,7 +41,7 @@
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
   <text class="due" x="472" y="516" font-size="76" font-weight="800">39</text>
-  <text class="mut" x="572" y="494" font-size="22">left · 0 done</text>
+  <text class="mut" x="572" y="494" font-size="22">left · 3 done</text>
   <text class="mut" x="572" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
@@ -56,8 +56,8 @@
   </g>
 
   <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
-  <text class="mut" x="44" y="912" font-size="16">new day · 39 due · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 2:02 AM</text>
+  <text class="mut" x="44" y="912" font-size="16">no change</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 3:00 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
