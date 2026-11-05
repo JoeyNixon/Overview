@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date": "2026-11-04", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Work Block AM", "start": 540, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Work Block PM", "start": 825, "end": 900}, {"name": "Office Hours", "start": 900, "end": 930}, {"name": "Wrap Up", "start": 930, "end": 990}, {"name": "Evening", "start": 990, "end": 1320}]}</metadata>
+  <metadata id="live">{"date": "2026-11-05", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Work Block AM", "start": 540, "end": 720}, {"name": "Lunch", "start": 720, "end": 840}, {"name": "Work Block PM", "start": 840, "end": 900}, {"name": "Office Hours", "start": 900, "end": 930}, {"name": "Wrap Up", "start": 930, "end": 990}, {"name": "Evening", "start": 990, "end": 1320}]}</metadata>
   <style>
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
@@ -18,10 +18,10 @@
   <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
 
   <!-- left column -->
-  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Wednesday, November 4</text>
+  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Thursday, November 5</text>
 
   <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
-  <text class="hero" x="66" y="146" font-size="30" font-weight="800">44</text>
+  <text class="hero" x="66" y="146" font-size="30" font-weight="800">43</text>
   <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
   <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
 
@@ -31,7 +31,7 @@
   <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 5:30 AM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
   <rect id="rn-bar" class="n3" x="72" y="316" width="0" height="12" rx="6"/>
-  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started tomorrow, 5:30 AM</text>
+  <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started, 5:30 AM</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
@@ -40,8 +40,8 @@
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">0</text>
-  <text class="mut" x="572" y="494" font-size="22">left · 8 done</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">39</text>
+  <text class="mut" x="572" y="494" font-size="22">left · 0 done</text>
   <text class="mut" x="572" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
@@ -55,9 +55,9 @@
     <text class="mut" x="500" y="690">0 of 4 steps done</text>
   </g>
 
-  <text class="warn" x="44" y="872" font-size="18">⚠ 5 goals open</text>
-  <text class="mut" x="44" y="912" font-size="16">nothing changed · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 12:06 AM</text>
+  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
+  <text class="mut" x="44" y="912" font-size="16">new day · 39 due · nothing failed</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 2:02 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -72,19 +72,21 @@
   <g font-size="18">
     <rect class="rout blk" data-end="540" x="990" y="95" width="770" height="174" rx="10"/>
     <text class="mut blkl" data-end="540" x="1012" y="123">5:30 – 9:00 · Getting Started</text>
-    <rect class="work blk" data-end="780" x="990" y="269" width="770" height="199" rx="10"/>
-    <text class="mut blkl" data-end="780" x="1012" y="297">9:00 – 1:00 · Work Block</text>
-    <rect class="rout blk" data-end="825" x="990" y="468" width="770" height="37" rx="10"/>
-    <text class="mut blkl" data-end="825" x="1012" y="490">1:00 – 1:45 · Lunch</text>
-    <rect class="work blk" data-end="900" x="990" y="505" width="770" height="62" rx="10"/>
-    <text class="mut blkl" data-end="900" x="1012" y="527">1:45 – 3:00 · Work Block</text>
+    <rect class="work blk" data-end="720" x="990" y="269" width="770" height="149" rx="10"/>
+    <text class="mut blkl" data-end="720" x="1012" y="297">9:00 – 12:00 · Work Block</text>
+    <rect class="rout blk" data-end="840" x="990" y="418" width="770" height="100" rx="10"/>
+    <text class="mut blkl" data-end="840" x="1012" y="446">12:00 – 2:00 · Lunch</text>
+    <rect class="work blk" data-end="900" x="990" y="518" width="770" height="49" rx="10"/>
+    <text class="mut blkl" data-end="900" x="1012" y="540">2:00 – 3:00 · Work Block</text>
     <rect class="work blk" data-end="930" x="990" y="567" width="770" height="25" rx="10"/>
     <text class="mut blkl" data-end="930" x="1012" y="583">3:00 – 3:30 · Office Hours</text>
     <rect class="work blk" data-end="990" x="990" y="592" width="770" height="50" rx="10"/>
     <text class="mut blkl" data-end="990" x="1012" y="620">3:30 – 4:30 · Wrap Up</text>
     <rect class="home blk" data-end="1320" x="990" y="642" width="770" height="273" rx="10"/>
     <text class="mut blkl" data-end="1320" x="1012" y="670">4:30 – 10:00 · Evening</text>
+    <rect class="mtg blk" data-end="1260" x="990" y="766" width="770" height="99" rx="10"/>
+    <text class="mut blkl" data-end="1260" x="1012" y="788">7:00 – 9:00 · Meeting</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="915.0" x2="1760" y2="915.0" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="903.0" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="70.3" x2="1760" y2="70.3" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="58.3" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
