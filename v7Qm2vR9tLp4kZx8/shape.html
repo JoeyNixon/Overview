@@ -9,10 +9,10 @@
 <title>Today's shape</title>
 <style>
   :root { --card:#F7F6F3; --txt:#37352F; --mut:#787774; --line:#E3E2E0; --label:#0F6E56;
-          --rout:#FBEBC8; --work:#CFE8E2; --home:#E8E1F5; --mtg:#D3E5F7; --open:#EFEEEC; --now:#E03E3E; }
+          --rout:#FBEBC8; --work:#CFE8E2; --home:#E8E1F5; --mtg:#D3E5F7; --mtgEdge:#9CC3EA; --open:#EFEEEC; --now:#E03E3E; }
   @media (prefers-color-scheme: dark) {
     :root { --card:#202020; --txt:#EDEDED; --mut:#9B9B9B; --line:#333333; --label:#9FE1CB;
-            --rout:#4D3B17; --work:#1F4D44; --home:#3A2F5A; --mtg:#1D3A5C; --open:#2A2A2A; --now:#FF5C5C; }
+            --rout:#4D3B17; --work:#1F4D44; --home:#3A2F5A; --mtg:#1D3A5C; --mtgEdge:#3F6E9E; --open:#2A2A2A; --now:#FF5C5C; }
   }
   html, body { margin: 0; padding: 0; background: transparent; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--txt); }
@@ -20,20 +20,20 @@
   .label { color: var(--label); font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-bottom: 18px; }
   .chart { position: relative; }
   .lane { position: relative; height: 46px; }
-  .lane.mtg { height: 24px; margin-top: 4px; }
   .blk { position: absolute; top: 0; bottom: 0; border-radius: 8px; box-sizing: border-box; padding: 5px 7px;
-         overflow: hidden; white-space: nowrap; border: 1px solid var(--card); }
+         overflow: hidden; white-space: nowrap; border: 1px solid var(--card); z-index: 1; }
   .blk .n { font-size: 13px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; }
   .blk .t { font-size: 11px; color: var(--mut); overflow: hidden; text-overflow: ellipsis; }
-  .lane.mtg .blk { padding: 3px 7px; }
-  .lane.mtg .blk .n { font-size: 12px; }
+  .blk.mtgc { top: 5px; bottom: 5px; z-index: 2; padding: 4px 7px; border: 1px solid var(--mtgEdge); }
+  .blk.mtgc .n { font-size: 12px; }
+  .blk.mtgc .t { font-size: 10px; }
   .past { opacity: 0.4; }
   .rout { background: var(--rout); } .work { background: var(--work); } .home { background: var(--home); }
   .mtgc { background: var(--mtg); } .openc { background: var(--open); }
-  .axis { position: relative; height: 20px; margin-top: 6px; border-top: 1px solid var(--line); }
+  .axis { position: relative; height: 20px; margin-top: 8px; border-top: 1px solid var(--line); }
   .tick { position: absolute; top: 4px; font-size: 11px; color: var(--mut); transform: translateX(-50%); white-space: nowrap; }
   .tick:first-child { transform: none; }
-  .nowline { position: absolute; top: -4px; bottom: 26px; width: 3px; margin-left: -1.5px; background: var(--now); border-radius: 2px; }
+  .nowline { position: absolute; top: -4px; bottom: 28px; width: 3px; margin-left: -1.5px; background: var(--now); border-radius: 2px; z-index: 3; }
   .nowtag { position: absolute; top: -18px; font-size: 11px; font-weight: 700; color: var(--now); transform: translateX(-50%); }
   .hidden { display: none; }
 </style>
@@ -43,7 +43,6 @@
   <div class="label">TODAY'S SHAPE</div>
   <div id="chart" class="chart">
     <div id="lane" class="lane"></div>
-    <div id="mlane" class="lane mtg hidden"></div>
     <div id="axis" class="axis"></div>
     <div id="nowline" class="nowline hidden"></div>
     <div id="nowtag" class="nowtag hidden">now</div>
@@ -51,7 +50,7 @@
 </div>
 <script>
   // Reads today's blocks and meetings from the Overview graphic (content.svg, redrawn by the hourly)
-  // and lays them out left to right. The now line moves on its own.
+  // and lays them out left to right. Meetings sit on top of the block they fall in. The now line moves on its own.
   let items = [], lo = 360, hi = 1320;
 
   function toMin(s) { const [h, m] = s.trim().split(":").map(Number); return (h % 12) * 60 + (m || 0); }
@@ -78,13 +77,11 @@
   }
 
   function draw() {
-    const lane = document.getElementById("lane"), mlane = document.getElementById("mlane"), axis = document.getElementById("axis");
-    lane.innerHTML = ""; mlane.innerHTML = ""; axis.innerHTML = "";
+    const lane = document.getElementById("lane"), axis = document.getElementById("axis");
+    lane.innerHTML = ""; axis.innerHTML = "";
     if (!items.length) return;
     lo = Math.floor(Math.min(...items.map(b => b.start)) / 60) * 60;
     hi = Math.ceil(Math.max(...items.map(b => b.end)) / 60) * 60;
-    const meetings = items.filter(b => b.kind === "mtg");
-    mlane.classList.toggle("hidden", meetings.length === 0);
     items.forEach(b => {
       const el = document.createElement("div");
       el.className = "blk " + (b.kind === "mtg" ? "mtgc" : b.kind === "open" ? "openc" : b.kind);
@@ -94,9 +91,8 @@
       el.title = fmt(b.start) + " – " + fmt(b.end) + " · " + b.name;
       el.innerHTML = '<div class="n"></div><div class="t"></div>';
       el.querySelector(".n").textContent = b.name;
-      if (b.kind !== "mtg") el.querySelector(".t").textContent = fmt(b.start) + "–" + fmt(b.end);
-      else el.querySelector(".n").textContent = b.name + " · " + fmt(b.start);
-      (b.kind === "mtg" ? mlane : lane).appendChild(el);
+      el.querySelector(".t").textContent = fmt(b.start) + "–" + fmt(b.end);
+      lane.appendChild(el);
     });
     for (let m = lo; m <= hi; m += 180) {
       const t = document.createElement("div");
