@@ -37,7 +37,7 @@
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">4</text>
   <text class="mut" x="152" y="494" font-size="20">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">oldest 13h 08m</text>
+  <text class="mut" x="152" y="522" font-size="18">oldest 14h 10m</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
@@ -62,7 +62,7 @@
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 1 routine left from Getting Started · 5 goals unchecked</text>
   <text class="mut" x="44" y="912" font-size="16">nothing changed · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 11:01 PM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 12:02 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
