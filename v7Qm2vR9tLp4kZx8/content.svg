@@ -28,37 +28,41 @@
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Evening</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 10:00 PM</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">ended 10:00 PM</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="594.4" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="724" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started, 5:30 AM</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">4</text>
   <text class="mut" x="152" y="494" font-size="20">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">oldest 11h 08m</text>
+  <text class="mut" x="152" y="522" font-size="18">oldest 13h 08m</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">38</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">0</text>
   <text class="mut" x="572" y="494" font-size="22">left · 15 done</text>
   <text class="mut" x="572" y="522" font-size="18">0 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
-  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 3 done</text>
+  <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 0 of 5 done</text>
   <g font-size="17">
-    <text class="txt" x="72" y="638" font-weight="600">Wheeler logging access over unimproved street</text>
-    <text class="mut" x="500" y="638">1 of 6 steps done</text>
-    <text class="txt" x="72" y="664" font-weight="600">MSAI 531 · Week 3 · Lecture and reading</text>
-    <text class="mut" x="500" y="664">0 of 5 steps done</text>
-    <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 3 · Project 2: XOR network</text>
-    <text class="mut" x="500" y="690">0 of 4 steps done</text>
+    <text class="txt" x="72" y="638" font-weight="600">SQL Server Schema Consolidation</text>
+    <text class="mut" x="500" y="638">0 of 7 steps done</text>
+    <text class="txt" x="72" y="664" font-weight="600">MSAI 531 · Week 3 · Assignment 4: ensemble error</text>
+    <text class="mut" x="500" y="664">0 of 4 steps done</text>
+    <text class="txt" x="72" y="690" font-weight="600">MSAI 531 · Week 3 · Lecture and reading</text>
+    <text class="mut" x="500" y="690">0 of 5 steps done</text>
+    <text class="txt" x="72" y="716" font-weight="600">MSAI 531 · Week 3 · Assignment 5: linear activations</text>
+    <text class="mut" x="500" y="716">0 of 5 steps done</text>
+    <text class="txt" x="72" y="742" font-weight="600">MSAI 531 · Week 3 · Project 2: XOR network</text>
+    <text class="mut" x="500" y="742">0 of 4 steps done</text>
   </g>
 
-  <text class="warn" x="44" y="872" font-size="18">⚠ 1 routine left from Office Hours · 5 goals unchecked</text>
+  <text class="warn" x="44" y="872" font-size="18">⚠ 1 routine left from Getting Started · 5 goals unchecked</text>
   <text class="mut" x="44" y="912" font-size="16">nothing changed · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 9:01 PM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 11:01 PM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -83,11 +87,11 @@
     <text class="mut blkl" data-end="930" x="1012" y="583" opacity="0.6" text-decoration="line-through">3:00 – 3:30 · Office Hours</text>
     <rect class="work blk" data-end="990" x="990" y="592" width="770" height="50" rx="10" opacity="0.45"/>
     <text class="mut blkl" data-end="990" x="1012" y="620" opacity="0.6" text-decoration="line-through">3:30 – 4:30 · Wrap Up</text>
-    <rect class="home blk" data-end="1320" x="990" y="642" width="770" height="273" rx="10"/>
-    <text class="mut blkl" data-end="1320" x="1012" y="670">4:30 – 10:00 · Evening</text>
-    <rect class="mtg blk" data-end="1260" x="990" y="766" width="770" height="99" rx="10"/>
-    <text class="mut blkl" data-end="1260" x="1012" y="788">7:00 – 9:00 · Meeting</text>
+    <rect class="home blk" data-end="1320" x="990" y="642" width="770" height="273" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="1320" x="1012" y="670" opacity="0.6" text-decoration="line-through">4:30 – 10:00 · Evening</text>
+    <rect class="mtg blk" data-end="1260" x="990" y="766" width="770" height="99" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="1260" x="1012" y="788" opacity="0.6" text-decoration="line-through">7:00 – 9:00 · Meeting</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="866.33" x2="1760" y2="866.33" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="854.33" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="965.74" x2="1760" y2="965.74" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="953.74" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
