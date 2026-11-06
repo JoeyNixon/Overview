@@ -37,7 +37,7 @@
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">4</text>
   <text class="mut" x="152" y="494" font-size="20">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">oldest 16h 17m</text>
+  <text class="mut" x="152" y="522" font-size="18">oldest 17h 12m</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
@@ -62,7 +62,7 @@
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 1 routine left from Getting Started · 5 goals unchecked</text>
   <text class="mut" x="44" y="912" font-size="16">nothing changed · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 2:10 AM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 3:05 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -79,18 +79,22 @@
     <text class="mut blkl" data-end="540" x="1012" y="123" opacity="0.6" text-decoration="line-through">5:30 – 9:00 · Getting Started</text>
     <rect class="work blk" data-end="720" x="990" y="269" width="770" height="149" rx="10" opacity="0.45"/>
     <text class="mut blkl" data-end="720" x="1012" y="297" opacity="0.6" text-decoration="line-through">9:00 – 12:00 · Work Block</text>
-    <rect class="rout blk" data-end="840" x="990" y="418" width="770" height="100" rx="10" opacity="0.45"/>
+    <rect class="rout blk" data-end="840" x="990" y="418" width="770" height="99" rx="10" opacity="0.45"/>
     <text class="mut blkl" data-end="840" x="1012" y="446" opacity="0.6" text-decoration="line-through">12:00 – 2:00 · Lunch</text>
-    <rect class="work blk" data-end="900" x="990" y="518" width="770" height="49" rx="10" opacity="0.45"/>
-    <text class="mut blkl" data-end="900" x="1012" y="540" opacity="0.6" text-decoration="line-through">2:00 – 3:00 · Work Block</text>
+    <rect class="work blk" data-end="900" x="990" y="518" width="770" height="50" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="900" x="1012" y="546" opacity="0.6" text-decoration="line-through">2:00 – 3:00 · Work Block</text>
     <rect class="work blk" data-end="930" x="990" y="567" width="770" height="25" rx="10" opacity="0.45"/>
     <text class="mut blkl" data-end="930" x="1012" y="583" opacity="0.6" text-decoration="line-through">3:00 – 3:30 · Office Hours</text>
     <rect class="work blk" data-end="990" x="990" y="592" width="770" height="50" rx="10" opacity="0.45"/>
     <text class="mut blkl" data-end="990" x="1012" y="620" opacity="0.6" text-decoration="line-through">3:30 – 4:30 · Wrap Up</text>
-    <rect class="home blk" data-end="1320" x="990" y="642" width="770" height="273" rx="10" opacity="0.45"/>
-    <text class="mut blkl" data-end="1320" x="1012" y="670" opacity="0.6" text-decoration="line-through">4:30 – 10:00 · Evening</text>
+    <rect class="home blk" data-end="1140" x="990" y="642" width="770" height="124" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="1140" x="1012" y="670" opacity="0.6" text-decoration="line-through">4:30 – 7:00 · Evening</text>
+    <rect class="mtg blk" data-end="1095" x="990" y="679" width="770" height="50" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="1095" x="1012" y="707" opacity="0.6" text-decoration="line-through">5:15 – 6:15 · Meeting</text>
     <rect class="mtg blk" data-end="1260" x="990" y="766" width="770" height="99" rx="10" opacity="0.45"/>
-    <text class="mut blkl" data-end="1260" x="1012" y="788" opacity="0.6" text-decoration="line-through">7:00 – 9:00 · Meeting</text>
+    <text class="mut blkl" data-end="1260" x="1012" y="794" opacity="0.6" text-decoration="line-through">7:00 – 9:00 · Meeting</text>
+    <rect class="home blk" data-end="1320" x="990" y="866" width="770" height="50" rx="10" opacity="0.45"/>
+    <text class="mut blkl" data-end="1320" x="1012" y="894" opacity="0.6" text-decoration="line-through">9:00 – 10:00 · Evening</text>
   </g>
   <line id="nowline" class="now" x1="980" y1="965.74" x2="1760" y2="965.74" stroke-width="4"/>
   <text id="nowlabel" class="nowt" x="1760" y="953.74" font-size="20" font-weight="700" text-anchor="end">now</text>
