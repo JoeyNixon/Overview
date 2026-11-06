@@ -33,49 +33,90 @@
   <div id="next" class="next"></div>
 </div>
 <script>
-  // Reads the day's blocks from the Overview graphic's metadata (content.svg, redrawn by the hourly)
-  // and keeps the card live. No data of its own.
-  let blocks = [];
-  function fmt(min) {
-    const h = Math.floor(min / 60), m = min % 60, h12 = ((h + 11) % 12) + 1;
-    return h12 + ":" + String(m).padStart(2, "0");
-  }
+  // Reads today's blocks and meetings from the Overview graphic (content.svg, redrawn by the hourly)
+  // and keeps the card live. A meeting in progress wins over its block; a block ends early when a
+  // meeting starts inside it, and picks back up after the meeting.
+  let items = [];
+
+  function toMin(s) { const [h, m] = s.trim().split(":").map(Number); return (h % 12) * 60 + (m || 0); }
+  function fmt(min) { const h = Math.floor(min / 60), m = min % 60, h12 = ((h + 11) % 12) + 1;
+    return h12 + ":" + String(m).padStart(2, "0"); }
   function dur(min) {
     if (min < 60) return min + (min === 1 ? " minute" : " minutes");
     const h = Math.floor(min / 60), m = min % 60;
     return h + " hr" + (m ? " " + m + " min" : "");
   }
+
+  function parse(svgText) {
+    const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
+    const rects = [...doc.querySelectorAll("rect.blk")], labels = [...doc.querySelectorAll("text.blkl")];
+    const out = [];
+    rects.forEach((r, i) => {
+      const end = Number(r.getAttribute("data-end"));
+      const raw = (labels[i] && labels[i].textContent) || "";
+      const cut = raw.indexOf(" · ");
+      if (cut < 0 || !end) return;
+      const [a, b] = raw.slice(0, cut).split("–");
+      let d = ((toMin(b) - toMin(a)) % 720 + 720) % 720; if (d === 0) d = 720;
+      out.push({ name: raw.slice(cut + 3), start: end - d, end, mtg: r.classList.contains("mtg") });
+    });
+    return out;
+  }
+
   function render() {
     const t = new Date(), now = t.getHours() * 60 + t.getMinutes();
-    const cur = blocks.find(b => now >= b.start && now < b.end);
-    const next = blocks.find(b => b.start > now);
+    const meetings = items.filter(x => x.mtg), blocks = items.filter(x => !x.mtg);
+
+    // what's happening now
+    let cur = meetings.find(m => now >= m.start && now < m.end);
+    let curStart, curEnd;
+    if (cur) { curStart = cur.start; curEnd = cur.end; }
+    else {
+      cur = blocks.find(b => now >= b.start && now < b.end);
+      if (cur) {
+        curEnd = cur.end;
+        meetings.forEach(m => { if (m.start > now && m.start < curEnd) curEnd = m.start; });
+        // if a meeting already happened inside this block, count from when it ended
+        curStart = cur.start;
+        meetings.forEach(m => { if (m.end <= now && m.end > curStart && m.start >= cur.start) curStart = m.end; });
+      }
+    }
+
+    // what's next: anything starting later, or the block you return to after a meeting
+    const nexts = items.filter(x => x.start > now).map(x => ({ name: x.name, at: x.start }));
+    if (cur && cur.mtg) {
+      const back = blocks.find(b => b.start < cur.end && b.end > cur.end);
+      if (back) nexts.push({ name: back.name, at: cur.end });
+    }
+    nexts.sort((a, b) => a.at - b.at);
+    const next = nexts.find(n => !cur || n.at >= curEnd || n.name !== cur.name);
+
     const title = document.getElementById("title"), left = document.getElementById("left");
     const track = document.getElementById("track"), bar = document.getElementById("bar"), nx = document.getElementById("next");
     if (cur) {
       title.textContent = cur.name;
-      left.textContent = dur(cur.end - now) + " left · ends " + fmt(cur.end);
-      bar.style.width = Math.max(2, 100 * (now - cur.start) / (cur.end - cur.start)).toFixed(1) + "%";
+      left.textContent = dur(curEnd - now) + " left · ends " + fmt(curEnd);
+      bar.style.width = Math.max(2, 100 * (now - curStart) / (curEnd - curStart)).toFixed(1) + "%";
       track.classList.remove("hidden");
     } else if (next) {
       title.textContent = "Open";
-      left.textContent = "until " + fmt(next.start);
+      left.textContent = "until " + fmt(next.at);
       track.classList.add("hidden");
     } else {
       title.textContent = "Done for the day";
       left.textContent = "nothing else scheduled";
       track.classList.add("hidden");
     }
-    nx.textContent = next ? "Next: " + next.name + " at " + fmt(next.start) : "";
+    nx.textContent = next ? "Next: " + next.name + " at " + fmt(next.at) : "";
     nx.classList.toggle("hidden", !next);
   }
+
   async function load() {
     try {
       const r = await fetch("content.svg?t=" + Date.now(), { cache: "no-store" });
       if (!r.ok) return;
-      const doc = new DOMParser().parseFromString(await r.text(), "image/svg+xml");
-      const meta = doc.getElementById("live");
-      if (meta) blocks = (JSON.parse(meta.textContent).blocks || []);
-      render();
+      const parsed = parse(await r.text());
+      if (parsed.length) { items = parsed; render(); }
     } catch (e) { /* keep showing the last good card */ }
   }
   load();
