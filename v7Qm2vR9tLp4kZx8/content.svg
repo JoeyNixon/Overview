@@ -28,20 +28,20 @@
   <rect class="n1" x="44" y="182" width="780" height="196" rx="20"/>
   <text class="n3" x="72" y="218" font-size="17" font-weight="600" letter-spacing="1">RIGHT NOW</text>
   <text id="rn-title" class="n2" x="72" y="264" font-size="38" font-weight="700">Evening</text>
-  <text id="rn-left" class="n3" x="72" y="300" font-size="21">until 10:00 PM</text>
+  <text id="rn-left" class="n3" x="72" y="300" font-size="21">ending now</text>
   <rect id="rn-barbg" x="72" y="316" width="724" height="12" rx="6" fill="#FFFFFF" opacity="0.6"/>
-  <rect id="rn-bar" class="n3" x="72" y="316" width="603.3" height="12" rx="6"/>
+  <rect id="rn-bar" class="n3" x="72" y="316" width="724" height="12" rx="6"/>
   <text id="rn-next" class="n2" x="72" y="358" font-size="19">Next: Getting Started, tomorrow 5:30 AM</text>
 
   <rect class="card" x="44" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">1</text>
   <text class="mut" x="152" y="494" font-size="20">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">oldest 11h04m</text>
+  <text class="mut" x="152" y="522" font-size="18">oldest 12h00m</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">15</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">17</text>
   <text class="mut" x="572" y="494" font-size="22">left · 6 done</text>
   <text class="mut" x="572" y="522" font-size="18">0 overdue</text>
 
@@ -62,7 +62,7 @@
 
   <text class="warn" x="44" y="872" font-size="18">⚠ 3 routines left from Wrap Up · 5 goals open</text>
   <text class="mut" x="44" y="912" font-size="16">1 PERRLA item advanced · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 9:05 PM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 10:01 PM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
@@ -94,6 +94,6 @@
     <rect class="home blk" data-end="1320" x="990" y="642" width="770" height="273" rx="10"/>
     <text class="txt blkl" data-end="1320" x="1012" y="670">4:30 – 10:00 · Evening</text>
   </g>
-  <line id="nowline" class="now" x1="980" y1="869.6" x2="1760" y2="869.6" stroke-width="4"/>
-  <text id="nowlabel" class="nowt" x="1760" y="857.6" font-size="20" font-weight="700" text-anchor="end">now</text>
+  <line id="nowline" class="now" x1="980" y1="916.0" x2="1760" y2="916.0" stroke-width="4"/>
+  <text id="nowlabel" class="nowt" x="1760" y="904.0" font-size="20" font-weight="700" text-anchor="end">now</text>
 </svg>
