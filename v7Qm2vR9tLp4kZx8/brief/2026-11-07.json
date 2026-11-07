@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-07",
+  "tiles": [
+    { "label": "PERRLA sales", "value": "$4,033.45", "sub": "161 of 188 succeeded", "bar": 85.6, "state": "ok" },
+    { "label": "Lookup conversion", "value": "76.6%", "sub": "raw", "bar": 76.6, "state": "ok" },
+    { "label": "New customers", "value": "18", "sub": "first-time purchases", "state": "ok" },
+    { "label": "Free trial starts", "value": "168", "parts": [["Word Online", 92], ["Online", 42], ["Word Desktop", 27], ["Google Docs", 7]], "state": "ok" },
+    { "label": "Backups", "value": "Good", "check": true, "state": "ok" },
+    { "label": "Processes", "value": "Good", "check": true, "state": "ok" },
+    { "label": "API", "value": "0.99", "sub": "Apdex · 0.01% errors · 115 ms", "state": "ok" },
+    { "label": "Word app", "value": "6.5%", "sub": "errors · 2.02 s load · 4,070 loads", "state": "ok" }
+  ]
+}

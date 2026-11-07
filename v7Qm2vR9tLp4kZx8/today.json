@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-07",
+  "updated": "2026-11-07T11:06:00-06:00",
+  "blocks": [
+    { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
+    { "name": "Open", "start": 540, "end": 990, "kind": "open" },
+    { "name": "Evening", "start": 990, "end": 1320, "kind": "home" }
+  ]
+}

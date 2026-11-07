@@ -49,32 +49,14 @@
   </div>
 </div>
 <script>
-  // Reads today's blocks and meetings from the Overview graphic (content.svg, redrawn by the hourly)
-  // and lays them out left to right. Meetings sit on top of the block they fall in. The now line moves on its own.
+  // Reads today's blocks and meetings from today.json (written by the hourly) and lays them out left to right.
+  // Meetings sit on top of the block they fall in. The now line moves on its own.
   let items = [], lo = 360, hi = 1320;
 
-  function toMin(s) { const [h, m] = s.trim().split(":").map(Number); return (h % 12) * 60 + (m || 0); }
   function fmt(min) { const h = Math.floor(min / 60), m = min % 60, h12 = ((h + 11) % 12) + 1;
     return h12 + ":" + String(m).padStart(2, "0"); }
   function hourLabel(min) { const h = Math.floor(min / 60), h12 = ((h + 11) % 12) + 1; return h12 + (h < 12 ? " AM" : " PM"); }
   function pct(min) { return (100 * (min - lo) / (hi - lo)); }
-
-  function parse(svgText) {
-    const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
-    const rects = [...doc.querySelectorAll("rect.blk")], labels = [...doc.querySelectorAll("text.blkl")];
-    const out = [];
-    rects.forEach((r, i) => {
-      const end = Number(r.getAttribute("data-end"));
-      const raw = (labels[i] && labels[i].textContent) || "";
-      const cut = raw.indexOf(" · ");
-      if (cut < 0 || !end) return;
-      const [a, b] = raw.slice(0, cut).split("–");
-      let dur = ((toMin(b) - toMin(a)) % 720 + 720) % 720; if (dur === 0) dur = 720;
-      const kind = ["rout", "work", "home", "mtg", "open"].find(k => r.classList.contains(k)) || "open";
-      out.push({ name: raw.slice(cut + 3), start: end - dur, end, kind });
-    });
-    return out;
-  }
 
   function draw() {
     const lane = document.getElementById("lane"), axis = document.getElementById("axis");
@@ -106,7 +88,6 @@
   function tick() {
     const d = new Date(), now = d.getHours() * 60 + d.getMinutes();
     document.querySelectorAll(".blk").forEach(el => el.classList.toggle("past", Number(el.dataset.end) <= now));
-    // hide labels that don't fit their block
     document.querySelectorAll(".blk").forEach(el => {
       const tight = el.offsetWidth < 46;
       el.querySelectorAll(".n, .t").forEach(x => x.style.visibility = tight ? "hidden" : "visible");
@@ -119,9 +100,11 @@
 
   async function load() {
     try {
-      const r = await fetch("content.svg?t=" + Date.now(), { cache: "no-store" });
+      const r = await fetch("today.json?t=" + Date.now(), { cache: "no-store" });
       if (!r.ok) return;
-      const parsed = parse(await r.text());
+      const data = await r.json();
+      const kinds = ["rout", "work", "home", "mtg", "open"];
+      const parsed = (data.blocks || []).map(b => ({ name: b.name, start: b.start, end: b.end, kind: kinds.includes(b.kind) ? b.kind : "open" }));
       if (parsed.length) { items = parsed; draw(); }
     } catch (e) { /* keep the last good drawing */ }
   }
