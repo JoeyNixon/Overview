@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMin meet">
-  <metadata id="live">{"date": "2026-11-06", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 420}, {"name": "Office Hours", "start": 510, "end": 570}, {"name": "Work Block AM", "start": 570, "end": 780}, {"name": "Lunch", "start": 780, "end": 825}, {"name": "Work Block PM", "start": 825, "end": 930}, {"name": "Wrap Up", "start": 930, "end": 990}, {"name": "Evening", "start": 990, "end": 1320}]}</metadata>
+  <metadata id="live">{"date": "2026-11-07", "y6": 120, "pxh": 49.7, "blocks": [{"name": "Getting Started", "start": 330, "end": 540}, {"name": "Open", "start": 540, "end": 990}, {"name": "Evening", "start": 990, "end": 1320}]}</metadata>
   <style>
     :root { --bg:#F7F6F3; --card:#FFFFFF; --line:#E3E2E0; --txt:#37352F; --mut:#787774; --hero:#2F7D4F; --heroSoft:#DCEEE3;
             --now1:#CFE8E2; --now2:#04342C; --now3:#0F6E56; --inbox:#2383E2; --due:#D9730D;
@@ -18,10 +18,10 @@
   <rect class="bg" x="0" y="0" width="1800" height="1000" rx="22"/>
 
   <!-- left column -->
-  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Friday, November 6</text>
+  <text class="txt" x="44" y="84" font-size="54" font-weight="700">Saturday, November 7</text>
 
   <rect class="heroSoft" x="44" y="108" width="780" height="54" rx="14"/>
-  <text class="hero" x="66" y="146" font-size="30" font-weight="800">42</text>
+  <text class="hero" x="66" y="146" font-size="30" font-weight="800">41</text>
   <text class="txt" x="116" y="143" font-size="21" font-weight="600">days to Christmas break</text>
   <text class="mut" x="380" y="143" font-size="18">· Friday, December 18</text>
 
@@ -37,13 +37,13 @@
   <text class="mut" x="72" y="432" font-size="17" font-weight="600" letter-spacing="1">INBOX</text>
   <text class="inbox" x="72" y="516" font-size="56" font-weight="800">1</text>
   <text class="mut" x="152" y="494" font-size="20">to file</text>
-  <text class="mut" x="152" y="522" font-size="18">oldest 13h05m</text>
+  <text class="mut" x="152" y="522" font-size="18">oldest 14h05m</text>
 
   <rect class="card" x="444" y="398" width="380" height="156" rx="20" stroke-width="1.5"/>
   <text class="mut" x="472" y="432" font-size="17" font-weight="600" letter-spacing="1">DUE TODAY</text>
-  <text class="due" x="472" y="516" font-size="76" font-weight="800">17</text>
-  <text class="mut" x="572" y="494" font-size="22">left · 6 done</text>
-  <text class="mut" x="572" y="522" font-size="18">0 overdue</text>
+  <text class="due" x="472" y="516" font-size="76" font-weight="800">19</text>
+  <text class="mut" x="572" y="494" font-size="22">left · 0 done</text>
+  <text class="mut" x="572" y="522" font-size="18">17 overdue</text>
 
   <rect class="card" x="44" y="574" width="780" height="220" rx="20" stroke-width="1.5"/>
   <text class="mut" x="72" y="608" font-size="17" font-weight="600" letter-spacing="1">PRIORITIES · 1 of 5 done</text>
@@ -60,9 +60,9 @@
     <text class="mut" x="500" y="742">0 of 4 steps done</text>
   </g>
 
-  <text class="warn" x="44" y="872" font-size="18">⚠ 7 routines left from Wrap Up, Evening · 5 goals open</text>
+  <text class="ok" x="44" y="872" font-size="18">✓ Nothing behind today</text>
   <text class="mut" x="44" y="912" font-size="16">nothing changed · nothing failed</text>
-  <text class="mut" x="44" y="966" font-size="18">updated 11:06 PM</text>
+  <text class="mut" x="44" y="966" font-size="18">updated 12:06 AM</text>
 
   <!-- right column: today's shape -->
   <text class="txt" x="900" y="84" font-size="30" font-weight="700">Today's shape</text>
