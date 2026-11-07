@@ -4,7 +4,7 @@
     { "label": "Sales", "value": "$4,033", "sub": "161 of 188 succeeded", "bar": 85.6, "state": "ok" },
     { "label": "Lookups", "value": "76.6%", "sub": "raw conversion", "bar": 76.6, "state": "ok" },
     { "label": "New customers", "value": "18", "sub": "first-time purchases", "state": "ok" },
-    { "label": "Trials", "value": "168", "parts": [["Word Online", 92], ["Online", 42], ["Word Desktop", 27], ["Google Docs", 7]], "state": "ok" },
+    { "label": "Trials", "value": "168", "parts": [["Word Online", 92], ["Online", 42], ["Word Desktop", 27], ["GDocs", 7]], "state": "ok" },
     { "label": "Backups", "value": "Good", "check": true, "state": "ok" },
     { "label": "Processes", "value": "Good", "check": true, "state": "ok" },
     { "label": "API", "value": "0.99", "sub": "Apdex · 0.01% errors · 115 ms", "state": "ok" },

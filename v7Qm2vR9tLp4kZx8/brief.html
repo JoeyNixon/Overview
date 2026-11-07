@@ -16,57 +16,71 @@
             --wcard:#4D3017; --wtitle:#FBE3CC; --waccent:#FF9F5A;
             --bcard:#5A2A24; --btitle:#FBE3DF; --baccent:#F2A99C; }
   }
-  /* Fills whatever box Notion gives the embed: 4 across, 2 down, text scaled to the box,
-     so the phone (narrow, short) and the desktop (wide, tall) both show all eight. */
+  /* Each embed shows four tiles (&part=1 or &part=2). The grid fills whatever box Notion gives:
+     2 x 2 on a phone or a normal box, 4 x 1 only when the box is very wide. Text scales to each tile. */
   html, body { margin: 0; padding: 0; height: 100%; background: var(--page); overflow: hidden; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  .grid { box-sizing: border-box; height: 100vh; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-          grid-template-rows: repeat(2, minmax(0, 1fr)); gap: min(1.6vw, 3vh); }
-  .card { background: var(--card); border-radius: min(2.6vw, 5vh); padding: min(2.2vw, 4.2vh) min(2.4vw, 4.6vh);
-          box-sizing: border-box; min-width: 0; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
-  .label { color: var(--accent); font-size: max(8px, min(1.8vw, 3.6vh)); font-weight: 700; letter-spacing: 0.06em;
+  .grid { box-sizing: border-box; height: 100vh; display: grid; gap: 8px;
+          grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); }
+  @media (min-aspect-ratio: 3/1) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); } }
+  .card { container-type: size; background: var(--card); border-radius: 14px; box-sizing: border-box;
+          min-width: 0; min-height: 0; overflow: hidden; }
+  .in { box-sizing: border-box; height: 100%; padding: max(8px, min(6cqw, 10cqh)) max(10px, min(7cqw, 11cqh));
+        display: flex; flex-direction: column; }
+  .label { color: var(--accent); font-size: max(9px, min(6.5cqw, 12cqh)); font-weight: 700; letter-spacing: 0.06em;
            text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .value { color: var(--title); font-size: min(5vw, 10.5vh); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1;
-           margin-top: min(0.4vw, 0.8vh); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .sub { color: var(--accent); font-size: max(8px, min(1.9vw, 3.8vh)); line-height: 1.25; margin-top: min(0.5vw, 1vh);
+  .value { color: var(--title); font-size: max(16px, min(17cqw, 30cqh)); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
+           margin-top: 1cqh; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sub { color: var(--accent); font-size: max(10px, min(7cqw, 12cqh)); line-height: 1.25; margin-top: 2cqh;
          overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-  .track { background: var(--track); height: min(1.2vw, 2.4vh); border-radius: 99px; margin-top: auto; overflow: hidden; display: flex; flex: none; }
+  .legend { display: grid; grid-template-columns: auto auto; justify-content: start; gap: 0 8px; margin-top: 2cqh; letter-spacing: -0.01em;
+            font-size: max(9px, min(4.9cqw, 9.5cqh)); line-height: 1.3; color: var(--title); }
+  .legend span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .legend i { display: inline-block; width: 0.6em; height: 0.6em; border-radius: 2px; background: var(--accent); margin-right: 0.3em; vertical-align: 0.05em; }
+  .track { background: var(--track); height: max(5px, min(3.5cqw, 6cqh)); border-radius: 99px; margin-top: auto; overflow: hidden; display: flex; flex: none; }
   .bar { background: var(--accent); height: 100%; }
-  .warn { background: var(--wcard); } .warn .label, .warn .sub { color: var(--waccent); } .warn .value { color: var(--wtitle); } .warn .bar { background: var(--waccent); }
-  .bad { background: var(--bcard); } .bad .label, .bad .sub { color: var(--baccent); } .bad .value { color: var(--btitle); } .bad .bar { background: var(--baccent); }
+  .warn { background: var(--wcard); } .warn .label, .warn .sub { color: var(--waccent); } .warn .value, .warn .legend { color: var(--wtitle); } .warn .bar, .warn .legend i { background: var(--waccent); }
+  .bad { background: var(--bcard); } .bad .label, .bad .sub { color: var(--baccent); } .bad .value, .bad .legend { color: var(--btitle); } .bad .bar, .bad .legend i { background: var(--baccent); }
   .msg { color: #787774; font-size: 13px; padding: 8px 2px; }
 </style>
 </head>
 <body>
 <div id="grid" class="grid"></div>
 <script>
-  // One morning brief's tiles. The brief embeds brief.html?d=YYYY-MM-DD; the 4:45 AM run writes brief/YYYY-MM-DD.json.
+  // One morning brief's tiles. The brief embeds brief.html?d=YYYY-MM-DD&part=1 and &part=2 (four tiles each);
+  // the 4:45 AM run writes brief/YYYY-MM-DD.json with eight tiles.
   // Tile: { label, value, sub?, state?: "ok"|"warn"|"bad", bar?: 0-100, parts?: [[name, count], ...], check?: true }
+  const SHADES = [1, .65, .4, .22, .12];
   function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
-  function render(data) {
+  function render(data, part) {
     const g = document.getElementById("grid"); g.innerHTML = "";
-    (data.tiles || []).forEach(t => {
-      const c = el("div", "card" + (t.state && t.state !== "ok" ? " " + t.state : ""));
-      c.appendChild(el("div", "label", t.label));
-      c.appendChild(el("div", "value", (t.check ? (t.state === "bad" ? "✕ " : "✓ ") : "") + t.value));
-      const sub = t.parts ? t.parts.map(p => p[0] + " " + p[1]).join(" · ") : t.sub;
-      if (sub) c.appendChild(el("div", "sub", sub));
+    let tiles = data.tiles || [];
+    if (part === "1") tiles = tiles.slice(0, 4); else if (part === "2") tiles = tiles.slice(4, 8);
+    tiles.forEach(t => {
+      const c = el("div", "card" + (t.state && t.state !== "ok" ? " " + t.state : "")), w = el("div", "in");
+      w.appendChild(el("div", "label", t.label));
+      w.appendChild(el("div", "value", (t.check ? (t.state === "bad" ? "✕ " : "✓ ") : "") + t.value));
+      if (t.parts) {
+        const lg = el("div", "legend");
+        t.parts.forEach((p, i) => { const s = el("span"); const sw = el("i"); sw.style.opacity = SHADES[i] || .1; s.appendChild(sw); const n = el("b", null, p[1] + " "); n.style.fontWeight = 700; s.appendChild(n); s.appendChild(document.createTextNode(p[0])); lg.appendChild(s); });
+        w.appendChild(lg);
+      } else if (t.sub) w.appendChild(el("div", "sub", t.sub));
       if (t.bar != null || t.parts) {
         const tr = el("div", "track");
         if (t.parts) {
           const total = t.parts.reduce((s, p) => s + p[1], 0) || 1;
-          t.parts.forEach((p, i) => { const b = el("div", "bar"); b.style.width = (100 * p[1] / total) + "%"; b.style.opacity = [1, .7, .45, .28, .18][i] || .15; tr.appendChild(b); });
+          t.parts.forEach((p, i) => { const b = el("div", "bar"); b.style.width = (100 * p[1] / total) + "%"; b.style.opacity = SHADES[i] || .1; tr.appendChild(b); });
         } else { const b = el("div", "bar"); b.style.width = Math.max(0, Math.min(100, t.bar)) + "%"; tr.appendChild(b); }
-        c.appendChild(tr);
+        w.appendChild(tr);
       }
-      g.appendChild(c);
+      c.appendChild(w); g.appendChild(c);
     });
   }
-  const d = new URLSearchParams(location.search).get("d");
+  const q = new URLSearchParams(location.search), d = q.get("d"), part = q.get("part");
   if (!d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) document.getElementById("grid").appendChild(el("div", "msg", "No date given."));
   else fetch("brief/" + d + ".json?t=" + Date.now(), { cache: "no-store" })
     .then(r => r.ok ? r.json() : Promise.reject())
-    .then(render)
+    .then(data => render(data, part))
     .catch(() => document.getElementById("grid").appendChild(el("div", "msg", "Tiles for " + d + " aren't published yet.")));
 </script>
 </body>
