@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-07T23:03:00-06:00",
+  "updated": "2026-11-08T04:18:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 3, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 1, "sub": "1 project" },
     "questions": { "label": "Questions", "count": 34, "sub": "across 17 projects" },
-    "meetings": { "label": "Meetings", "count": 0, "sub": "" },
-    "meals": { "label": "Meals", "sub": "Lunch: Post Run Brunch\nDinner: TBD" }
+    "meetings": { "label": "Meetings", "count": 1, "sub": "Church at 10:00 AM" },
+    "meals": { "label": "Meals", "sub": "" }
   }
 }
