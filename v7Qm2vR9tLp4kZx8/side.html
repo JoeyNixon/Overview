@@ -51,7 +51,7 @@
   function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   const k = new URLSearchParams(location.search).get("k");
   const NAMES = { inbox: "Inbox", reviews: "Reviews", questions: "Questions" };
-  const ICONS = { inbox: "📥", reviews: "🔍", questions: "🧭" };
+  const ICONS = { inbox: "📥", reviews: "🔍", questions: "❓" };
   function render(data) {
     const t = (data.tiles || {})[k], box = document.getElementById("in"), card = document.getElementById("card");
     box.innerHTML = "";
