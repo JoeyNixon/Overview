@@ -36,6 +36,8 @@
   }
   .in > .value { order: 1; } .in > .txt { order: 0; display: contents; } .txt > .sub { order: 2; }
   @media (max-height: 120px) { .in > .value { order: 0; } .in > .txt { display: flex; order: 1; } }
+  .icon { margin-right: 0.45em; letter-spacing: 0; }
+  .clear .icon { filter: grayscale(1); opacity: 0.7; }
   .clear { background: var(--ecard); } .clear .label, .clear .value, .clear .sub { color: var(--etitle); }
   .msg { color: #787774; font-size: 13px; padding: 8px 2px; }
 </style>
@@ -49,6 +51,7 @@
   function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   const k = new URLSearchParams(location.search).get("k");
   const NAMES = { inbox: "Inbox", reviews: "Reviews", questions: "Questions" };
+  const ICONS = { inbox: "📥", reviews: "🔍", questions: "🧭" };
   function render(data) {
     const t = (data.tiles || {})[k], box = document.getElementById("in"), card = document.getElementById("card");
     box.innerHTML = "";
@@ -56,7 +59,7 @@
     const n = Number(t.count) || 0;
     card.classList.toggle("clear", n === 0);
     const txt = el("div", "txt");
-    txt.appendChild(el("div", "label", t.label || NAMES[k] || k));
+    const lab = el("div", "label"); const ic = el("span", "icon", t.icon || ICONS[k] || ""); lab.appendChild(ic); lab.appendChild(document.createTextNode(t.label || NAMES[k] || k)); txt.appendChild(lab);
     if (n > 0 && t.sub) txt.appendChild(el("div", "sub", t.sub));
     box.appendChild(el("div", "value", n === 0 ? "Clear" : String(n)));
     box.appendChild(txt);
