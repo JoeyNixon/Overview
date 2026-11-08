@@ -27,6 +27,15 @@
            margin-top: 1cqh; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .sub { color: var(--accent); font-size: max(11px, min(6.5cqw, 13cqh)); line-height: 1.25; margin-top: 2cqh;
          overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  /* Short, wide box (the usual sidebar size once dragged down): number on the left, label and sub on the right. */
+  @media (max-height: 120px) {
+    .in { flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; padding: 6px 16px; }
+    .value { font-size: max(22px, min(16vw, 62vh)); margin-top: 0; order: -1; flex: none; }
+    .txt { display: flex; flex-direction: column; min-width: 0; }
+    .label { font-size: 11px; } .sub { font-size: 12px; margin-top: 2px; -webkit-line-clamp: 1; }
+  }
+  .in > .value { order: 1; } .in > .txt { order: 0; display: contents; } .txt > .sub { order: 2; }
+  @media (max-height: 120px) { .in > .value { order: 0; } .in > .txt { display: flex; order: 1; } }
   .clear { background: var(--ecard); } .clear .label, .clear .value, .clear .sub { color: var(--etitle); }
   .msg { color: #787774; font-size: 13px; padding: 8px 2px; }
 </style>
@@ -46,9 +55,11 @@
     if (!t) { box.appendChild(el("div", "msg", "Nothing here yet.")); return; }
     const n = Number(t.count) || 0;
     card.classList.toggle("clear", n === 0);
-    box.appendChild(el("div", "label", t.label || NAMES[k] || k));
+    const txt = el("div", "txt");
+    txt.appendChild(el("div", "label", t.label || NAMES[k] || k));
+    if (n > 0 && t.sub) txt.appendChild(el("div", "sub", t.sub));
     box.appendChild(el("div", "value", n === 0 ? "Clear" : String(n)));
-    if (n > 0 && t.sub) box.appendChild(el("div", "sub", t.sub));
+    box.appendChild(txt);
   }
   function load() {
     fetch("side.json?t=" + Date.now(), { cache: "no-store" })
