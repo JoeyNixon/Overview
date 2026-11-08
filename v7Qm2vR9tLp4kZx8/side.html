@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Waiting on you</title>
+<style>
+  :root { --page:#FFFFFF; --card:#CFE8E2; --title:#04342C; --accent:#0F6E56;
+          --ecard:#F1F1EF; --etitle:#787774; }
+  @media (prefers-color-scheme: dark) {
+    :root { --page:#191919; --card:#1F4D44; --title:#E1F5EE; --accent:#9FE1CB;
+            --ecard:#252525; --etitle:#9B9B9B; }
+  }
+  /* One Dashboard side-panel tile: side.html?k=inbox|reviews|questions. Fills whatever box Notion gives it.
+     Counts only: the repo is public. Nothing here is a link; the Notion link sits under the embed. */
+  html, body { margin: 0; padding: 0; height: 100%; background: var(--page); overflow: hidden; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .card { container-type: size; box-sizing: border-box; height: 100vh; background: var(--card); border-radius: 14px; overflow: hidden; }
+  .in { box-sizing: border-box; height: 100%; padding: max(10px, min(7cqw, 12cqh)) max(12px, min(8cqw, 13cqh));
+        display: flex; flex-direction: column; justify-content: center; }
+  .label { color: var(--accent); font-size: max(10px, min(6cqw, 13cqh)); font-weight: 700; letter-spacing: 0.08em;
+           text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .value { color: var(--title); font-size: max(20px, min(20cqw, 38cqh)); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
+           margin-top: 1cqh; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sub { color: var(--accent); font-size: max(11px, min(6.5cqw, 13cqh)); line-height: 1.25; margin-top: 2cqh;
+         overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .clear { background: var(--ecard); } .clear .label, .clear .value, .clear .sub { color: var(--etitle); }
+  .msg { color: #787774; font-size: 13px; padding: 8px 2px; }
+</style>
+</head>
+<body>
+<div id="card" class="card"><div class="in" id="in"></div></div>
+<script>
+  // Written hourly by Process: Hourly Sweep §2h into side.json:
+  // { "updated": "...", "tiles": { "inbox": { "label", "count", "sub" }, "reviews": {...}, "questions": {...} } }
+  // count 0 shows a gray "Clear" card.
+  function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  const k = new URLSearchParams(location.search).get("k");
+  const NAMES = { inbox: "Inbox", reviews: "Reviews", questions: "Questions" };
+  function render(data) {
+    const t = (data.tiles || {})[k], box = document.getElementById("in"), card = document.getElementById("card");
+    box.innerHTML = "";
+    if (!t) { box.appendChild(el("div", "msg", "Nothing here yet.")); return; }
+    const n = Number(t.count) || 0;
+    card.classList.toggle("clear", n === 0);
+    box.appendChild(el("div", "label", t.label || NAMES[k] || k));
+    box.appendChild(el("div", "value", n === 0 ? "Clear" : String(n)));
+    if (n > 0 && t.sub) box.appendChild(el("div", "sub", t.sub));
+  }
+  function load() {
+    fetch("side.json?t=" + Date.now(), { cache: "no-store" })
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(render)
+      .catch(() => {});
+  }
+  load();
+  setInterval(load, 300000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+</script>
+</body>
+</html>

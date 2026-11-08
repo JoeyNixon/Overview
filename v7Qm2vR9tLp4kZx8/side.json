@@ -1,0 +1,8 @@
+{
+  "updated": "2026-11-07T19:40:00-06:00",
+  "tiles": {
+    "inbox": { "label": "Inbox", "count": 5, "sub": "to file" },
+    "reviews": { "label": "Reviews", "count": 1, "sub": "1 project" },
+    "questions": { "label": "Questions", "count": 33, "sub": "across 16 projects" }
+  }
+}
