@@ -14,8 +14,8 @@
     :root { --page:#191919; --card:#1F4D44; --title:#E1F5EE; --accent:#9FE1CB;
             --ecard:#252525; --etitle:#9B9B9B; }
   }
-  /* One Dashboard side-panel tile: side.html?k=inbox|reviews|questions. Fills whatever box Notion gives it.
-     Counts only: the repo is public. Nothing here is a link; the Notion link sits under the embed. */
+  /* One Dashboard side-panel tile: side.html?k=inbox|reviews|questions|meetings|meals. Fills whatever box Notion gives it.
+     Nothing here is a link; the Notion link sits under the embed. */
   html, body { margin: 0; padding: 0; height: 100%; background: var(--page); overflow: hidden; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
   .card { container-type: size; box-sizing: border-box; height: 100vh; background: var(--card); border-radius: 14px; overflow: hidden; }
@@ -26,13 +26,13 @@
   .value { color: var(--title); font-size: max(20px, min(20cqw, 38cqh)); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
            margin-top: 1cqh; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .sub { color: var(--accent); font-size: max(11px, min(6.5cqw, 13cqh)); line-height: 1.25; margin-top: 2cqh;
-         overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+         overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; white-space: pre-line; }
   /* Short, wide box (the usual sidebar size once dragged down): number on the left, label and sub on the right. */
   @media (max-height: 120px) {
     .in { flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; padding: 6px 16px; }
     .value { font-size: max(22px, min(16vw, 62vh)); margin-top: 0; order: -1; flex: none; }
     .txt { display: flex; flex-direction: column; min-width: 0; }
-    .label { font-size: 11px; } .sub { font-size: 12px; margin-top: 2px; -webkit-line-clamp: 1; }
+    .label { font-size: 11px; } .sub { font-size: 12px; margin-top: 2px; -webkit-line-clamp: 2; line-height: 1.2; }
   }
   .in > .value { order: 1; } .in > .txt { order: 0; display: contents; } .txt > .sub { order: 2; }
   @media (max-height: 120px) { .in > .value { order: 0; } .in > .txt { display: flex; order: 1; } }
@@ -46,22 +46,26 @@
 <div id="card" class="card"><div class="in" id="in"></div></div>
 <script>
   // Written hourly by Process: Hourly Sweep §2h into side.json:
-  // { "updated": "...", "tiles": { "inbox": { "label", "count", "sub" }, "reviews": {...}, "questions": {...} } }
-  // count 0 shows a gray "Clear" card. Each tile's emoji sits left of its number, at the number's size.
+  // { "updated": "...", "tiles": { "inbox": { "label", "count", "sub" }, "reviews", "questions", "meetings", "meals" (no count) } }
+  // sub may hold line breaks (\n): one meeting or meal per line.
+  // count 0 shows a gray card: 0, with "all clear" (or the tile's clearText) as its line.
   function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   const k = new URLSearchParams(location.search).get("k");
-  const NAMES = { inbox: "Inbox", reviews: "Reviews", questions: "Questions" };
-  const ICONS = { inbox: "📥", reviews: "🔍", questions: "❓" };
+  const NAMES = { inbox: "Inbox", reviews: "Reviews", questions: "Questions", meetings: "Meetings", meals: "Meals" };
+  const ICONS = { inbox: "📥", reviews: "🔍", questions: "❓", meetings: "📅", meals: "🍽️" };
   function render(data) {
     const t = (data.tiles || {})[k], box = document.getElementById("in"), card = document.getElementById("card");
     box.innerHTML = "";
     if (!t) { box.appendChild(el("div", "msg", "Nothing here yet.")); return; }
-    const n = Number(t.count) || 0;
+    // A tile without a count (Meals) shows only its emoji in the number spot and is never gray.
+    const hasCount = t.count !== undefined && t.count !== null;
+    const n = hasCount ? (Number(t.count) || 0) : 1;
     card.classList.toggle("clear", n === 0);
     const txt = el("div", "txt");
     txt.appendChild(el("div", "label", t.label || NAMES[k] || k));
-    if (n > 0 && t.sub) txt.appendChild(el("div", "sub", t.sub));
-    const val = el("div", "value"); val.appendChild(el("span", "icon", t.icon || ICONS[k] || "")); val.appendChild(document.createTextNode(n === 0 ? "Clear" : String(n))); box.appendChild(val);
+    const sub = n === 0 ? (t.clearText || "all clear") : t.sub;
+    if (sub) txt.appendChild(el("div", "sub", sub));
+    const val = el("div", "value"); val.appendChild(el("span", "icon", t.icon || ICONS[k] || "")); if (hasCount) val.appendChild(document.createTextNode(String(n))); box.appendChild(val);
     box.appendChild(txt);
   }
   function load() {
