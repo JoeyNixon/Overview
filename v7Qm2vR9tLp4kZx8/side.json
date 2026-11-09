@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-09T04:14:00-06:00",
+  "updated": "2026-11-09T07:12:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 2, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 3, "sub": "3 projects" },
-    "questions": { "label": "Questions", "count": 28, "sub": "across 19 projects" },
+    "questions": { "label": "Questions", "count": 27, "sub": "across 18 projects" },
     "meetings": { "label": "Meetings", "count": 3, "sub": "9:00 Weekly Prep\n10:00 Weekly PERRLA Dev Call\n3:00 Joey and Morris" },
     "meals": { "label": "Meals", "sub": "Lunch: Chicken and baked potato\nDinner: Spaghetti" }
   }
