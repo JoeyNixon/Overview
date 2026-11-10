@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-09T22:05:00-06:00",
+  "updated": "2026-11-10T01:05:57-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 2, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "0 projects" },
     "questions": { "label": "Questions", "count": 29, "sub": "across 20 projects" },
     "meetings": { "label": "Meetings", "count": 0, "sub": "None left today" },
-    "meals": { "label": "Meals", "sub": "Lunch: Chicken and baked potato\nDinner: Spaghetti" }
+    "meals": { "label": "Meals", "sub": "Lunch: Prepped Chicken\nDinner: Spaghetti" }
   }
 }
