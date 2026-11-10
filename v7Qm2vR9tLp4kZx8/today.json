@@ -1,15 +1,13 @@
 {
-  "date": "2026-11-09",
-  "updated": "2026-11-09T04:14:00-06:00",
+  "date": "2026-11-10",
+  "updated": "2026-11-10T01:05:57-06:00",
   "blocks": [
     { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
-    { "name": "Meeting", "start": 540, "end": 600, "kind": "mtg" },
-    { "name": "Meeting", "start": 600, "end": 630, "kind": "mtg" },
-    { "name": "Work Block AM", "start": 630, "end": 780, "kind": "work" },
+    { "name": "Work Block AM", "start": 540, "end": 780, "kind": "work" },
     { "name": "Lunch", "start": 780, "end": 825, "kind": "home" },
     { "name": "Work Block PM", "start": 825, "end": 900, "kind": "work" },
-    { "name": "Meeting", "start": 900, "end": 960, "kind": "mtg" },
-    { "name": "Wrap Up", "start": 960, "end": 990, "kind": "rout" },
+    { "name": "Pick up kids", "start": 900, "end": 930, "kind": "home" },
+    { "name": "Wrap Up", "start": 930, "end": 990, "kind": "rout" },
     { "name": "Evening", "start": 990, "end": 1320, "kind": "home" }
   ]
 }
