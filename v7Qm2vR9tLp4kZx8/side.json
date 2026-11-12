@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-12T04:08:00-06:00",
+  "updated": "2026-11-12T09:08:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "nothing waiting" },
     "questions": { "label": "Questions", "count": 5, "sub": "across 4 projects" },
-    "meetings": { "label": "Meetings", "count": 1, "sub": "7:30 Chamber Meeting" },
+    "meetings": { "label": "Meetings", "count": 1, "sub": "5:15 Beasley-Gymnastics" },
     "meals": { "label": "Meals", "sub": "Lunch: Prepped Chicken\nDinner: Spaghetti" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 5, "sub": "Google Docs\nChrome/Edge\n3 after-deploy", "clearText": "nothing waiting" }
   }
