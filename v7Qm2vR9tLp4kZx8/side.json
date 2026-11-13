@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-12T21:01:00-06:00",
+  "updated": "2026-11-12T22:06:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "nothing waiting" },
-    "questions": { "label": "Questions", "count": 3, "sub": "across 2 projects" },
+    "questions": { "label": "Questions", "count": 4, "sub": "across 3 projects" },
     "meetings": { "label": "Meetings", "count": 0, "sub": "No meetings today" },
     "meals": { "label": "Meals", "sub": "Lunch: Prepped Chicken\nDinner: Spaghetti" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 8, "sub": "Google Docs\nChrome/Edge\n6 after-deploy", "clearText": "nothing waiting" }
