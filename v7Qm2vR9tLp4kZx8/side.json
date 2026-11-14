@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-14T00:02:11-06:00",
+  "updated": "2026-11-14T08:02:00-06:00",
   "tiles": {
-    "inbox": { "label": "Inbox", "count": 1, "sub": "to file" },
+    "inbox": { "label": "Inbox", "count": 2, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 3, "sub": "2 project(s)" },
     "questions": { "label": "Questions", "count": 5, "sub": "across 4 projects" },
     "meetings": { "label": "Meetings", "count": 0, "sub": "No meetings today" },
