@@ -1,14 +1,16 @@
 {
-  "date": "2026-11-17",
-  "updated": "2026-11-17T00:03:00-06:00",
+  "date": "2026-11-18",
+  "updated": "2026-11-18T00:05:00-06:00",
   "blocks": [
     { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
-    { "name": "Work Block AM", "start": 540, "end": 660, "kind": "work" },
-    { "name": "Office Hours", "start": 660, "end": 690, "kind": "work" },
-    { "name": "Work Block AM", "start": 690, "end": 720, "kind": "work" },
-    { "name": "Meeting", "start": 720, "end": 810, "kind": "mtg" },
-    { "name": "Meeting", "start": 810, "end": 930, "kind": "mtg" },
-    { "name": "Wrap Up", "start": 930, "end": 990, "kind": "rout" },
-    { "name": "Evening", "start": 990, "end": 1320, "kind": "home" }
+    { "name": "Work Block AM", "start": 540, "end": 735, "kind": "work" },
+    { "name": "Lunch", "start": 735, "end": 780, "kind": "home" },
+    { "name": "Meeting", "start": 780, "end": 810, "kind": "mtg" },
+    { "name": "Work Block PM", "start": 810, "end": 900, "kind": "work" },
+    { "name": "Office Hours", "start": 900, "end": 930, "kind": "work" },
+    { "name": "Wrap Up", "start": 930, "end": 1020, "kind": "rout" },
+    { "name": "Evening", "start": 1020, "end": 1110, "kind": "home" },
+    { "name": "Meeting", "start": 1110, "end": 1170, "kind": "mtg" },
+    { "name": "Evening", "start": 1170, "end": 1320, "kind": "home" }
   ]
 }
