@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-19",
+  "tiles": [
+    { "label": "Sales", "value": "$4,099", "sub": "162 of 207 succeeded", "bar": 78.3, "state": "ok" },
+    { "label": "Lookups", "value": "76.2%", "sub": "raw conversion", "bar": 76.2, "state": "ok" },
+    { "label": "New customers", "value": "22", "sub": "first-time purchases", "state": "ok" },
+    { "label": "Trials", "value": "185", "parts": [["Word Online", 106], ["Online", 40], ["Word Desktop", 30], ["GDocs", 5]], "state": "ok" },
+    { "label": "Backups", "value": "1 log late", "state": "bad" },
+    { "label": "Processes", "value": "Good", "check": true, "state": "ok" },
+    { "label": "API", "value": "0.99", "sub": "Apdex · 0.00% errors · 105 ms", "state": "ok" },
+    { "label": "Word app", "value": "3.8%", "sub": "errors · 1.30 s median · 4,636 loads", "state": "ok" }
+  ]
+}
