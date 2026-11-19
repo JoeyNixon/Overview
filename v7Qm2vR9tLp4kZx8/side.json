@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-18T22:05:00-06:00",
+  "updated": "2026-11-19T00:04:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "0 project(s)" },
     "questions": { "label": "Questions", "count": 8, "sub": "across 8 projects" },
-    "meetings": { "label": "Meetings", "count": 0, "sub": "None left today" },
-    "meals": { "label": "Meals", "sub": "Breakfast: Prepped Oats\nLunch: Prepped Beef and Rice\nDinner: Church" },
+    "meetings": { "label": "Meetings", "count": 1, "sub": "9:00 PERRLA All Call" },
+    "meals": { "label": "Meals", "sub": "Breakfast: Prepped Oats\nLunch: Prepped Beef and Rice\nDinner: TBD" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 8, "sub": "Google Docs\nChrome/Edge\n6 after-deploy", "clearText": "nothing waiting" }
   }
 }
