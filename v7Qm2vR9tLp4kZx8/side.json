@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-20T11:08:00-06:00",
+  "updated": "2026-11-20T12:04:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 1, "sub": "1 project(s)" },
     "questions": { "label": "Questions", "count": 6, "sub": "across 6 projects" },
     "meetings": { "label": "Meetings", "count": 0, "sub": "" },
     "meals": { "label": "Meals", "sub": "Breakfast: Pancakes and Sausage\nLunch: Prepped Beef and Rice\nDinner: TBD" },
-    "releases": { "label": "Releases", "icon": "🚀", "count": 9, "sub": "Word\nGoogle Docs\nChrome/Edge\n6 after-deploy", "clearText": "nothing waiting" }
+    "releases": { "label": "Releases", "icon": "🚀", "count": 9, "sub": "Google Docs\nChrome/Edge\n7 after-deploy", "clearText": "nothing waiting" }
   }
 }
