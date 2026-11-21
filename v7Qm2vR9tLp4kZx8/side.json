@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-21T01:01:00-06:00",
+  "updated": "2026-11-21T08:05:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 2, "sub": "to file" },
-    "reviews": { "label": "Reviews", "count": 3, "sub": "3 project(s)" },
-    "questions": { "label": "Questions", "count": 6, "sub": "across 6 projects" },
+    "reviews": { "label": "Reviews", "count": 2, "sub": "2 project(s)" },
+    "questions": { "label": "Questions", "count": 7, "sub": "across 7 projects" },
     "meetings": { "label": "Meetings", "count": 1, "sub": "2:00 Santa Haus at The Christmas Place" },
     "meals": { "label": "Meals", "sub": "Breakfast: Pancakes and Sausage\nLunch: TBD\nDinner: TBD" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 9, "sub": "Google Docs\nChrome/Edge\n7 after-deploy", "clearText": "nothing waiting" }
