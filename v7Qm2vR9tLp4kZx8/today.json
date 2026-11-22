@@ -1,11 +1,13 @@
 {
   "date": "2026-11-22",
-  "updated": "2026-11-22T00:03:00-06:00",
+  "updated": "2026-11-22T13:03:00-06:00",
   "blocks": [
     { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
     { "name": "Getting ready for church", "start": 540, "end": 600, "kind": "home" },
     { "name": "Meeting", "start": 600, "end": 720, "kind": "mtg" },
-    { "name": "Open", "start": 720, "end": 1140, "kind": "open" },
+    { "name": "Open", "start": 720, "end": 930, "kind": "open" },
+    { "name": "Meeting", "start": 930, "end": 990, "kind": "mtg" },
+    { "name": "Open", "start": 990, "end": 1140, "kind": "open" },
     { "name": "Evening", "start": 1140, "end": 1320, "kind": "home" }
   ]
 }
