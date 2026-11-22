@@ -1,13 +1,11 @@
 {
-  "date": "2026-11-21",
-  "updated": "2026-11-21T01:01:00-06:00",
+  "date": "2026-11-22",
+  "updated": "2026-11-22T00:03:00-06:00",
   "blocks": [
-    { "name": "Getting Started", "start": 330, "end": 450, "kind": "rout" },
-    { "name": "Run", "start": 450, "end": 600, "kind": "home" },
-    { "name": "Open", "start": 600, "end": 750, "kind": "open" },
-    { "name": "Driving", "start": 750, "end": 840, "kind": "home" },
-    { "name": "Meeting", "start": 840, "end": 870, "kind": "mtg" },
-    { "name": "Family time", "start": 870, "end": 1140, "kind": "home" },
+    { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
+    { "name": "Getting ready for church", "start": 540, "end": 600, "kind": "home" },
+    { "name": "Meeting", "start": 600, "end": 720, "kind": "mtg" },
+    { "name": "Open", "start": 720, "end": 1140, "kind": "open" },
     { "name": "Evening", "start": 1140, "end": 1320, "kind": "home" }
   ]
 }
