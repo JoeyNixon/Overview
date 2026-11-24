@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-24T07:02:00-06:00",
+  "updated": "2026-11-24T09:03:00-06:00",
   "tiles": {
-    "inbox": { "label": "Inbox", "count": 1, "sub": "to file" },
+    "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "0 project(s)" },
-    "questions": { "label": "Questions", "count": 8, "sub": "across 7 projects" },
+    "questions": { "label": "Questions", "count": 9, "sub": "across 8 projects" },
     "meetings": { "label": "Meetings", "count": 2, "sub": "2:00 Pickup Ham\n3:00 Joey Nixon Review (Fidelis)" },
     "meals": { "label": "Meals", "sub": "Breakfast: Cereal\nLunch: TBD\nDinner: Date Night" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 13, "sub": "Word\nGoogle Docs\nChrome/Edge\nDesktop\n9 after-deploy", "clearText": "nothing waiting" }
