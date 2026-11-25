@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "updated": "2026-11-25T00:02:00-06:00",
+  "updated": "2026-11-25T16:22:00-06:00",
   "blocks": [
     { "name": "Getting Started", "start": 330, "end": 540, "kind": "rout" },
     { "name": "Work Block AM", "start": 540, "end": 600, "kind": "work" },
@@ -10,8 +10,6 @@
     { "name": "Work Block PM", "start": 825, "end": 900, "kind": "work" },
     { "name": "Office Hours", "start": 900, "end": 930, "kind": "work" },
     { "name": "Wrap Up", "start": 930, "end": 990, "kind": "rout" },
-    { "name": "Evening", "start": 990, "end": 1080, "kind": "home" },
-    { "name": "Meeting", "start": 1080, "end": 1140, "kind": "mtg" },
-    { "name": "Evening", "start": 1140, "end": 1320, "kind": "home" }
+    { "name": "Evening", "start": 990, "end": 1320, "kind": "home" }
   ]
 }
