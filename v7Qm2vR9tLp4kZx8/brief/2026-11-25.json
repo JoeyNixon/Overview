@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-25",
+  "tiles": [
+    { "label": "Sales", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "Lookups", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "New customers", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "Trials", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "Backups", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "Processes", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "API", "value": "not in report", "sub": "report not in yet", "state": "warn" },
+    { "label": "Word app", "value": "not in report", "sub": "report not in yet", "state": "warn" }
+  ]
+}
