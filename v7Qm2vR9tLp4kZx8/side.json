@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-27T21:03:00-06:00",
+  "updated": "2026-11-28T00:01:00-06:00",
   "tiles": {
     "inbox": { "label": "Inbox", "count": 0, "sub": "to file" },
     "reviews": { "label": "Reviews", "count": 0, "sub": "0 project(s)" },
     "questions": { "label": "Questions", "count": 13, "sub": "across 8 projects" },
-    "meetings": { "label": "Meetings", "count": 0, "sub": "" },
+    "meetings": { "label": "Meetings", "count": 1, "sub": "5:00 Thanksgiving at Pert's" },
     "meals": { "label": "Meals", "sub": "" },
     "releases": { "label": "Releases", "icon": "🚀", "count": 16, "sub": "Word\nGoogle Docs\nChrome/Edge\nDesktop\nMobile\n11 after-deploy", "clearText": "nothing waiting" }
   }
